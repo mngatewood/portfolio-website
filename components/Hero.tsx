@@ -3,10 +3,30 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { BorderMagicButton } from './ui/BorderMagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import { FlipWords } from './ui/FlipWords'
 
 export const Hero = () => {
-  return (
-		<div className="pb-20 pt-36">
+
+	const words = [
+		"Software Engineer", 
+		"Problem-Solver", 
+		"Collaborator", 
+		"Army Veteran",
+		"Team Player",
+		"Communicator", 
+		"Learner", 
+		"Father & Husband",
+		"Leader", 
+		"Creator", 
+		"Professional", 
+		"Contributor", 
+		"Go-Getter",
+		"Tinkerer",
+		"Boardgamer"
+	]
+
+  	return (
+		<div className="flex flex-col justify-center items-center h-screen pb-20 pt-36">
 			<div>
 				<Spotlight className="-top-40 -left-10 md:-top-20 md:-left-32 h-screen fill:white"/>
 				<Spotlight className="top-10 left-full h-[80vh] w-[50vw] fill:purple"/>
@@ -21,10 +41,13 @@ export const Hero = () => {
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center">
 					<h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Michael N. Gatewood</h2>
 					<TextGenerateEffect
-						className="text-[40px] md:text-5xl lg:text-6xl text-center"
-						words="Cross-Functional Creator"
+						className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
+						words="Multi-Disciplined"
 					/>
-					<p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">I want to build things for you.</p>
+					<div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mb-6 text-purple font-bold">
+						<FlipWords words={words} />
+					</div>
+					<p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-2xl">Let's build something together!</p>
 					<a href="#" title="See My Projects">
 						<BorderMagicButton
 							text="See My Projects"
