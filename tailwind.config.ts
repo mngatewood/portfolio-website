@@ -38,6 +38,7 @@ const config = {
 					"100": "#E4ECFF",
 				},
 				purple: "#CBACF9",
+				cardBg: "#020024",
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
@@ -156,6 +157,9 @@ const config = {
 				scroll:
 					"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
 			},
+			screens: {
+				"xs": "360px",
+			}
 		},
 	},
 	plugins: [
