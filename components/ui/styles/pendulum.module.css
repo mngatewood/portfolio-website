@@ -1,0 +1,133 @@
+.pendulumContainer {
+	position:absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.string {
+	position: absolute;
+	top: 0;
+	width: 1px;
+	height: 65%;
+	background: #CBACF9;
+	transform-origin: top;
+	opacity: 0.3;
+}
+
+.stringOne {
+	left: calc(50% - 60px);
+	transform: rotate(45deg);
+	animation: pendulum-left 1.5s infinite;
+}
+
+.stringTwo {
+	left: calc(50% - 30px)
+}
+
+.stringThree {
+	left: 50%
+}
+
+.stringFour {
+	left: calc(50% + 30px)
+}
+
+.stringFive {
+	left: calc(50% + 60px);
+	transform: rotate(-45deg);
+	animation: pendulum-right 1.5s 0.75s infinite;
+}
+
+.string::after {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: -14px;
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	background: radial-gradient(circle at right bottom, rgba(2,0,36,1) 0%, rgba(203,172,249,1) 65%, rgba(0,212,255,1) 100%);
+	opacity: 0.8;
+	animation: collide 1.5s infinite;
+}
+
+@keyframes pendulum-left {
+	0% {
+		transform: rotate(0deg);
+		top: 0;
+	}
+	10% {
+		top: -5%;
+	}
+	20% {
+		top: 0;
+	}
+	40% {
+		transform: rotate(45deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+	90% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes pendulum-right {
+	0% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(-45deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes collide {
+	0% {
+		scale: 1;
+		box-shadow: 0 0 0 0;
+	}
+	5% {
+		scale: 1.1;
+		box-shadow: 0 0 5px 1px #CBACF9;
+	}
+	10% {
+		scale: 1;
+		box-shadow: 0 0 0 0;
+	}
+	50% {
+		scale: 1;
+		box-shadow: 0 0 0 0;
+	}
+	55% {
+		scale: 1.1;
+		box-shadow: 0 0 5px 1px #CBACF9;
+	}
+	60% {
+		scale: 1;
+		box-shadow: 0 0 0 0;
+	}
+	100% {
+		scale: 1;
+		box-shadow: 0 0 0 0;
+	}
+}
+
