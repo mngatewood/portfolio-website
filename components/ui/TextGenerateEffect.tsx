@@ -28,7 +28,7 @@ export const TextGenerateEffect = ({
 				delay: stagger(0.2),
 			}
 		);
-	}, [scope.current]);
+	}, []);
 
 	const renderWords = () => {
 		return (
@@ -37,13 +37,12 @@ export const TextGenerateEffect = ({
 					return (
 						<motion.span
 							key={word + idx}
-							// TODO: Infinite text carousel animation on second word
-							className={`${idx == 1 ? "text-purple" : "dark:text-white text-black"} opacity-0`}
+							className="dark:text-white text-black opacity-0"
 							style={{
 								filter: filter ? "blur(10px)" : "none",
 							}}
 						>
-							{word}{" "}
+							{word}
 						</motion.span>
 					);
 				})}
