@@ -104,7 +104,9 @@ export const InfiniteMovingCards = ({
 						<div className="relative h-full z-20">
 							<div className="flex flex-col justify-center items-center h-full gap-1">
 								<div className="text-xs leading-[1.6] text-gray-400 font-normal">
-									{item.icon}
+									<IconContext.Provider value={{ size: '2rem' }}>
+										{item.icon}
+									</IconContext.Provider>
 								</div>
 								<div className="text-xs leading-[1.6] text-gray-400 font-normal">
 									<IconContext.Provider value={{ size: '70px' }}>
