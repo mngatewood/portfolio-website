@@ -74,11 +74,10 @@ export const BentoGridItem = ({
 		<div
 			id={id}
 			className={cn(
-				"row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+				"row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1] bg-cardBg",
 				className,
 			)}
 			style={{
-				backgroundColor: "rgb(2, 0, 36)",
 				backgroundImage:
 					"linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
 			}}
@@ -125,13 +124,16 @@ export const BentoGridItem = ({
 
 				{/* Infinite moving cards */}
 				{id === "2" && (
-					<div className="absolute bottom-0 xs:bottom-4">
-						<InfiniteMovingCards
-							items={techStacks}
-							direction="left"
-							speed="normal"
-						/>
-					</div>
+					<>
+						<div className="absolute bottom-0 xs:bottom-4">
+							<InfiniteMovingCards
+								items={techStacks}
+								direction="left"
+								speed="normal"
+							/>
+						</div>
+						<div className="absolute w-full h-full z-20 bottom-0" style={{boxShadow: "10px 0 20px 0 rgb(2, 0, 36) inset, -10px 0 20px 0 rgb(2, 0, 36) inset"}} />
+					</>
 				)}
 
 				{/* Background dots, gradient and pendulum */}
