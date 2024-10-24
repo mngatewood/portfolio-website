@@ -3,7 +3,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
-import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha } from "react-icons/si";
 import { InfiniteMovingCards } from "./InfiniteMovingCards";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
@@ -74,11 +74,10 @@ export const BentoGridItem = ({
 		<div
 			id={id}
 			className={cn(
-				"row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+				"row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1] bg-cardBg",
 				className,
 			)}
 			style={{
-				backgroundColor: "rgb(2, 0, 36)",
 				backgroundImage:
 					"linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
 			}}
@@ -125,13 +124,16 @@ export const BentoGridItem = ({
 
 				{/* Infinite moving cards */}
 				{id === "2" && (
-					<div className="absolute bottom-4">
-						<InfiniteMovingCards
-							items={techStacks}
-							direction="left"
-							speed="normal"
-						/>
-					</div>
+					<>
+						<div className="absolute bottom-0 xs:bottom-4">
+							<InfiniteMovingCards
+								items={techStacks}
+								direction="left"
+								speed="normal"
+							/>
+						</div>
+						<div className="absolute w-full h-full z-20 bottom-0" style={{boxShadow: "10px 0 20px 0 rgb(2, 0, 36) inset, -10px 0 20px 0 rgb(2, 0, 36) inset"}} />
+					</>
 				)}
 
 				{/* Background dots, gradient and pendulum */}
@@ -192,73 +194,86 @@ export const BentoGridItem = ({
 	);
 };
 
-const techStacks = [ 
+// Exported here for benefit of tsx file
+export const techStacks = [ 
 	{
-		"icon": <TbBrandReact style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandReact />,
 		"title": "React",
 	}, 
 	{
-		"icon": <TbBrandNextjs	style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandNextjs />,
 		"title": "Next.js",
 	}, 
 	{
-		"icon": <TbBrandTailwind style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandTailwind />,
 		"title": "TailwindCSS",
 	}, 
 	{
-		"icon": <TbBrandTypescript style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandTypescript />,
 		"title": "TypeScript",
 	}, 
 	{
-		"icon": <TbBrandNodejs style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandNodejs />,
 		"title": "Node.js",
 	}, 
 	{
-		"icon": <SiExpress style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <SiExpress />,
 		"title": "Express",
 	}, 
 	{
-		"icon": <SiMongodb style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <SiMongodb />,
 		"title": "MongoDB",
 	}, 
 	{
-		"icon": <TbBrandPrisma style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandPrisma />,
 		"title": "Prism",
 	}, 
 	{
-		"icon": <SiMeteor style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <SiMeteor />,
 		"title": "Meteor.js",
 	}, 
 	{
-		"icon": <TbBrandSvelte style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandSvelte />,
 		"title": "Svelte",
 	}, 
 	{
-		"icon": <TbBrandDocker style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandDocker />,
 		"title": "Docker",
 	}, 
 	{
-		"icon": <SiSqlite style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <SiSqlite />,
 		"title": "SQLite",
 	}, 
 	{
-		"icon": <TbBrandGit style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandGit />,
 		"title": "Git",
 	}, 
 	{
-		"icon": <TbBrandGithub style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandGithub />,
 		"title": "GitHub",
 	}, 
 	{
-		"icon": <TbBrandFirebase style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <TbBrandFirebase />,
 		"title": "Firebase",
 	}, 
 	{
-		"icon": <SiPostgresql style={{ width: "2rem", height: "2rem"}} />,
+		"icon": <SiPostgresql />,
 		"title": "PostgreSQL",
 	}, 
 	{
-		"icon": <SiPostman style={{ width: "2rem", height: "2rem" }} />,
+		"icon": <SiPostman />,
 		"title": "Postman",
+	},
+	{
+		"icon": <SiPocketbase />,
+		"title": "Pocketbase",
+	},
+	{
+		"icon": <SiPlaywright />,
+		"title": "Playwright",
+	},
+	{
+		"icon": <SiMocha />,
+		"title": "Mocha",
 	},
 ]

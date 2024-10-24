@@ -72,3 +72,57 @@ export const gridItems = [
 	},
 ];
 
+export const projects = [
+	{
+		id: "1",
+		title: "Keys & Cogs",
+		description: "Keys & Cogs is a digital adaptation of the popular tabletop game, So Clover!",
+		img: "p1.png",
+		iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha"],
+		link: "https://mngatewood-keys-cogs.meteorapp.com/",
+		linkTitle: "mngatewood-keys-cogs.meteorapp.com",
+		repo: "https://github.com/mngatewood/keys-cogs"
+	},
+	{
+		id: "2",
+		title: "P.I. Link",
+		description: "PI Link is a digital reimplementation of the board game Detective Club published in 2018.",
+		img: "p2.png",
+		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
+		link: "https://pi-link-web-production.up.railway.app/",
+		linkTitle: "pi-link-web-production.up.railway.app",
+		repo: "https://github.com/mngatewood/pi-link-web"
+	},
+	{
+		id: "3",
+		title: "My Movie Tracker",
+		description: "A simple application that displays movie data and allows users to save their favorite movies.",
+		img: "p3.png",
+		iconList: ["React", "Express"],
+		// TODO: rebuild backend, deploy, and update link
+		link: "https://www.my-movie-tracker.com/",
+		linkTitle: "my-movie-tracker.com",
+		repo: "https://github.com/mngatewood/movie-tracker2"
+	},
+	{
+		id: "4",
+		title: "Michael N. Gatewood Portfolio",
+		description: "This is the digital portfolio for Michael N. Gatewood.",
+		img: "p4.png",
+		iconList: ["React", "Next.js", "TailwindCSS", "TypeScript"],
+		link: "https://mngatewood.com",
+		linkTitle: "mngatewood.com",
+		repo: "https://github.com/mngatewood/portfolio-website"
+	},
+]
+
+export const navItems = [
+	{
+		name: "About",
+		link: "#about",
+	},
+	{
+		name: "Projects",
+		link: "#projects",
+	},
+]

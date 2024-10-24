@@ -159,6 +159,7 @@ const config = {
 			},
 			screens: {
 				"xs": "360px",
+				"2xl": "2000px",
 			}
 		},
 	},
