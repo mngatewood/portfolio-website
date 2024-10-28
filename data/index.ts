@@ -126,3 +126,24 @@ export const navItems = [
 		link: "#projects",
 	},
 ]
+
+export const testimonials = [
+	{
+		quote: "Michael is conscientious, skilled in project management methods, and is a terrific person to have in your team. He's essentially a force multiplier when it comes to helping keep a group's projects on track. He helped me in particular with a project involving the development of a psychological assessment for use in the K-12 market.",
+		name: "Drew Carson, Ph.D.",
+		title: "Founder and CEO, Insta Report Assessment",
+		profile: "profile1.jpeg",
+	},
+	{
+		quote: "Michael is a dedicated team player who possesses the skills and knowledge needed to achieve excellent results.",
+		name: "Kimberly Block",
+		title: "Senior Program Manager, Data Recognition Corporation",
+		profile: "profile2.jpeg",
+	},
+	{
+		quote: "I had the pleasure of working alongside Micheal Gatewood, a remarkable full-stack developer and veteran who brings unparalleled dedication, technical expertise, and leadership to every project he touches. As the first alum to graduate from both Front-End and Back-End Engineering programs at the Turing School of Software and Design, Micheal is proficient in both stacks and continuously strives to improve his craft. Michael is known for his can-do attitude and analytical problem - solving approach.He always ensures quality and efficiency in his work.His experience in Project Management and Human Resources, combined with his technical skills in JavaScript, React, Node, Ruby on Rails, and more, enables him to navigate complex challenges and provide innovative solutions quickly.",
+		name: "Philip Stenberg",
+		title: "Systems Services NCOIC, Nevada Army National Guard",
+		profile: "profile3.jpeg",
+	},
+];
