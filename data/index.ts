@@ -141,7 +141,7 @@ export const testimonials = [
 		profile: "profile2.jpeg",
 	},
 	{
-		quote: "I had the pleasure of working alongside Micheal Gatewood, a remarkable full-stack developer and veteran who brings unparalleled dedication, technical expertise, and leadership to every project he touches. As the first alum to graduate from both Front-End and Back-End Engineering programs at the Turing School of Software and Design, Micheal is proficient in both stacks and continuously strives to improve his craft. Michael is known for his can-do attitude and analytical problem - solving approach.He always ensures quality and efficiency in his work.His experience in Project Management and Human Resources, combined with his technical skills in JavaScript, React, Node, Ruby on Rails, and more, enables him to navigate complex challenges and provide innovative solutions quickly.",
+		quote: "I had the pleasure of working alongside Micheal Gatewood, a remarkable full-stack developer and veteran who brings unparalleled dedication, technical expertise, and leadership to every project he touches.",
 		name: "Philip Stenberg",
 		title: "Systems Services NCOIC, Nevada Army National Guard",
 		profile: "profile3.jpeg",
