@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
 import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha } from "react-icons/si";
-import { InfiniteMovingCards } from "./InfiniteMovingCards";
+import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
@@ -126,7 +126,7 @@ export const BentoGridItem = ({
 				{id === "2" && (
 					<>
 						<div className="absolute bottom-0 xs:bottom-4">
-							<InfiniteMovingCards
+							<TechStackInfiniteCards
 								items={techStacks}
 								direction="left"
 								speed="normal"
