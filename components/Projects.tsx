@@ -14,7 +14,7 @@ export const Projects = () => {
 			<h1 className="heading py-8">Project Spotlight</h1>
 			<div className="flex flex-wrap items-center justify-center lg:justify-between gap-y-8 mt-4">
 				{ projects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
-					<div key={id} className="sm:h-[28rem] md:h-[26rem] lg:h-[40rem] 2xl:h-[48rem] lg:min-h-[32.5rem] flex flex-col items-center justify-center lg:max-w-[570px] lg:w-[40vw] w-[80vw]">
+					<div key={id} className="sm:h-[28rem] md:h-[26rem] lg:h-[32rem] 2xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center lg:max-w-[570px] lg:w-[40vw] w-[80vw]">
 						<PinContainer title={linkTitle} href={link}>
 							<div className="relative flex items-center justify-center lg:max-w-[570px] lg:w-[40vw] w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
 								<div className="relative w-full h-full overflow-hidden lg:rounded-3xl">

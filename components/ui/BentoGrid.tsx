@@ -89,7 +89,7 @@ export const BentoGridItem = ({
 				h-full`}>
 
 				{/* Images */}
-				<div className={`w-full h-full absolute top-0 left-0 ${id === "5" && "bg-gradient-to-l from-neutral-500 via-transparent to-transparent"}`}>
+				<div className={`w-full h-full absolute top-0 left-0 ${id === "5" && "bg-cardBg bg-gradient-to-l from-neutral-500 via-transparent to-transparent"}`}>
 					<img
 						src={img}
 						alt={img}
