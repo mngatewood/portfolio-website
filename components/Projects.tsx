@@ -1,8 +1,9 @@
 "use client"
-import React from 'react'
-import dynamic from 'next/dynamic'
-import { projects } from '@/data'
-import { ProjectIcon } from './ProjectIcon'
+import React from 'react';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import { projects } from '@/data';
+import { ProjectIcon } from './ProjectIcon';
 import { FaGithub } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
@@ -18,9 +19,24 @@ export const Projects = () => {
 						<PinContainer title={linkTitle} href={link}>
 							<div className="relative flex items-center justify-center lg:max-w-[570px] lg:w-[40vw] w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
 								<div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
-									<img src="/bg.png"alt="bg-img" />
+									<Image 
+										src="/bg.png" 
+										alt="bg-img"
+										// width={460}
+										// height={300}
+										loading="lazy"
+										layout="fill"
+									/>
 								</div>
-								<img src={img} alt={title} className="z-10 absolute bottom-0 h-[90%]" />
+								<Image 
+									src={img} 
+									alt={title} 
+									className="z-10 absolute bottom-0 h-[90%]"
+									// width={460}
+									// height={300}
+									loading="lazy"
+									layout="fill"
+								/>
 							</div>
 							<h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
 								{title}
