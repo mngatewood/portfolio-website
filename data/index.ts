@@ -86,7 +86,7 @@ export const projects = [
 	{
 		id: "2",
 		title: "P.I. Link",
-		description: "PI Link is a digital reimplementation of the board game Detective Club published in 2018.",
+		description: "PI Link is a digital reimplementation of the board game titled Detective Club.",
 		img: "p2.png",
 		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
 		link: "https://pi-link-web-production.up.railway.app/",
@@ -96,7 +96,7 @@ export const projects = [
 	{
 		id: "3",
 		title: "My Movie Tracker",
-		description: "A simple application that displays movie data and allows users to save their favorite movies.",
+		description: "A React app that displays movie data and allows users to save their favorite movies.",
 		img: "p3.png",
 		iconList: ["React", "Express"],
 		// TODO: rebuild backend, deploy, and update link
