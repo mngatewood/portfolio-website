@@ -95,9 +95,9 @@ export const BentoGridItem = ({
 						src={img}
 						alt={img}
 						className={cn(imgClassName, `object-cover object-center`)}
-						width={400}
-						height={400}
 						loading="lazy"
+						fill={true}
+						sizes="(max-width: 1024px) 92vw, (max-width: 1360px) 55vw, 754px"
 					/>}
 				</div>
 				<div className={`absolute right-0 -bottom-5`}>
@@ -105,9 +105,9 @@ export const BentoGridItem = ({
 						src={spareImg}
 						alt={spareImg}
 						className={cn(spareImgClassName, "object-cover object-center w-full h-full")}
-						width={400}
-						height={400}
 						loading="lazy"
+						fill={true}
+						sizes="(max-width: 1024px) 100vw, (max-width: 1360px) 60vw, 780px"
 					/>}
 				</div>
 

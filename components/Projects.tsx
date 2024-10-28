@@ -22,20 +22,19 @@ export const Projects = () => {
 									<Image 
 										src="/bg.png" 
 										alt="bg-img"
-										// width={460}
-										// height={300}
 										loading="lazy"
-										layout="fill"
+										fill={true}
+										sizes="(max-width: 1024px) 100vw, (max-width: 1360px) 50vw, 780px"
 									/>
 								</div>
 								<Image 
 									src={img} 
 									alt={title} 
-									className="z-10 absolute bottom-0 h-[90%]"
-									// width={460}
-									// height={300}
+									className="z-10 absolute bottom-0 h-[90%] object-contain"
 									loading="lazy"
-									layout="fill"
+									width={460}
+									height={300}
+									sizes="(max-width: 1024px) 100vw, (max-width: 1360px) 50vw, 780px"
 								/>
 							</div>
 							<h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">

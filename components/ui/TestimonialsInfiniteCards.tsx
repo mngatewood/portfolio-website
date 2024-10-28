@@ -15,6 +15,7 @@ export const TestimonialInfiniteCards = ({
 		quote: string;
 		name: string;
 		title: string;
+		profile: string;
 	}[];
 	direction?: "left" | "right";
 	speed?: "fast" | "normal" | "slow";
@@ -109,9 +110,10 @@ export const TestimonialInfiniteCards = ({
 										<Image 
 											src={item.profile} 
 											alt={item.name} 
-											className="w-10 h-10 rounded-full"
+											className="rounded-full"
 											loading="lazy"
-											layout="fill"
+											width={40}
+											height={40}
 										/>
 									</div>
 									<span className=" text-xl leading-[1.6] text-white font-bold">
