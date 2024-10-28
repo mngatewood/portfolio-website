@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
 import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha } from "react-icons/si";
-import { InfiniteMovingCards } from "./InfiniteMovingCards";
+import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
@@ -126,7 +126,7 @@ export const BentoGridItem = ({
 				{id === "2" && (
 					<>
 						<div className="absolute bottom-0 xs:bottom-4">
-							<InfiniteMovingCards
+							<TechStackInfiniteCards
 								items={techStacks}
 								direction="left"
 								speed="normal"
@@ -151,7 +151,7 @@ export const BentoGridItem = ({
 
 				{/* Background grid, gradient and pendulum */}
 				{["4", "6"].includes(id) && (
-					<div className="absolute top-0 w-full h-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex items-center justify-center">
+					<div className="absolute top-0 w-full h-full dark:bg-cardBg dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex items-center justify-center">
 						{/* Radial gradient for the container to give a faded look */}
 						<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-cardBg bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 						<div className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">

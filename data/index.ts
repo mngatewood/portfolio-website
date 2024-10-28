@@ -86,7 +86,7 @@ export const projects = [
 	{
 		id: "2",
 		title: "P.I. Link",
-		description: "PI Link is a digital reimplementation of the board game Detective Club published in 2018.",
+		description: "PI Link is a digital reimplementation of the board game titled Detective Club.",
 		img: "p2.png",
 		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
 		link: "https://pi-link-web-production.up.railway.app/",
@@ -96,7 +96,7 @@ export const projects = [
 	{
 		id: "3",
 		title: "My Movie Tracker",
-		description: "A simple application that displays movie data and allows users to save their favorite movies.",
+		description: "A React app that displays movie data and allows users to save their favorite movies.",
 		img: "p3.png",
 		iconList: ["React", "Express"],
 		// TODO: rebuild backend, deploy, and update link
@@ -126,3 +126,24 @@ export const navItems = [
 		link: "#projects",
 	},
 ]
+
+export const testimonials = [
+	{
+		quote: "Michael is conscientious, skilled in project management methods, and is a terrific person to have in your team. He's essentially a force multiplier when it comes to helping keep a group's projects on track. He helped me in particular with a project involving the development of a psychological assessment for use in the K-12 market.",
+		name: "Drew Carson, Ph.D.",
+		title: "Founder and CEO, Insta Report Assessment",
+		profile: "profile1.jpeg",
+	},
+	{
+		quote: "Michael is a dedicated team player who possesses the skills and knowledge needed to achieve excellent results.",
+		name: "Kimberly Block",
+		title: "Senior Program Manager, Data Recognition Corporation",
+		profile: "profile2.jpeg",
+	},
+	{
+		quote: "I had the pleasure of working alongside Micheal Gatewood, a remarkable full-stack developer and veteran who brings unparalleled dedication, technical expertise, and leadership to every project he touches.",
+		name: "Philip Stenberg",
+		title: "Systems Services NCOIC, Nevada Army National Guard",
+		profile: "profile3.jpeg",
+	},
+];
