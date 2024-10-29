@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export const TestimonialInfiniteCards = ({
 	items,
@@ -14,6 +15,7 @@ export const TestimonialInfiniteCards = ({
 		quote: string;
 		name: string;
 		title: string;
+		profile: string;
 	}[];
 	direction?: "left" | "right";
 	speed?: "fast" | "normal" | "slow";
@@ -105,7 +107,14 @@ export const TestimonialInfiniteCards = ({
 							<div className="relative z-20 mt-6 flex flex-row items-center">
 								<div className="flex flex-col gap-1">
 									<div className="me-3">
-										<img src={item.profile} alt={item.name} className="w-10 h-10 rounded-full" />
+										<Image 
+											src={item.profile} 
+											alt={item.name} 
+											className="rounded-full"
+											loading="lazy"
+											width={40}
+											height={40}
+										/>
 									</div>
 									<span className=" text-xl leading-[1.6] text-white font-bold">
 										{item.name}

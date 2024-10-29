@@ -1,12 +1,13 @@
 "use client";
 import { useState } from "react";
+import Lottie from "react-lottie";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
 import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha } from "react-icons/si";
 import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
 import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
 import animationData from "@/data/confetti.json";
 import { Pendulum } from "./Pendulum";
@@ -89,21 +90,25 @@ export const BentoGridItem = ({
 				h-full`}>
 
 				{/* Images */}
-				<div className={`w-full h-full absolute top-0 left-0 ${id === "5" && "bg-gradient-to-l from-neutral-500 via-transparent to-transparent"}`}>
-					<img
+				<div className={`w-full h-full absolute top-0 left-0 ${id === "5" && "bg-cardBg bg-gradient-to-l from-neutral-500 via-transparent to-transparent"}`}>
+					{img && <Image
 						src={img}
 						alt={img}
 						className={cn(imgClassName, `object-cover object-center`)}
-					/>
+						loading="lazy"
+						fill={true}
+						sizes="(max-width: 1024px) 92vw, (max-width: 1360px) 55vw, 754px"
+					/>}
 				</div>
 				<div className={`absolute right-0 -bottom-5`}>
-					{spareImg &&
-						<img
-							src={spareImg}
-							alt={spareImg}
-							className={cn(spareImgClassName, "object-cover object-center w-full h-full")}
-						/>					
-					}
+					{spareImg && <Image
+						src={spareImg}
+						alt={spareImg}
+						className={cn(spareImgClassName, "object-cover object-center w-full h-full")}
+						loading="lazy"
+						fill={true}
+						sizes="(max-width: 1024px) 100vw, (max-width: 1360px) 60vw, 780px"
+					/>}
 				</div>
 
 				{/* Background gradient animation */}
