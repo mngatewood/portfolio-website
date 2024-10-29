@@ -18,7 +18,7 @@ export const Projects = () => {
 					<div key={id} className="sm:h-[28rem] md:h-[26rem] lg:h-[32rem] 2xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center lg:max-w-[570px] lg:w-[40vw] w-[80vw]">
 						<PinContainer title={linkTitle} href={link}>
 							<div className="relative flex items-center justify-center lg:max-w-[570px] lg:w-[40vw] w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-								<div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
+								<div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
 									<Image 
 										src="/bg.png" 
 										alt="bg-img"
