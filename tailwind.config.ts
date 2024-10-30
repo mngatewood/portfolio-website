@@ -17,9 +17,6 @@ const config = {
 		container: {
 			center: true,
 			padding: "2rem",
-			screens: {
-				"2xl": "1400px",
-			},
 		},
 		extend: {
 			colors: {
@@ -158,7 +155,9 @@ const config = {
 					"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
 			},
 			screens: {
-				"xs": "360px",
+				"xxs": "360px",
+				"xs": "480px",
+				"xl": "1400px",
 				"2xl": "2000px",
 			}
 		},
