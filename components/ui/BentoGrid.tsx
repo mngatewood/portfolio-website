@@ -5,13 +5,13 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
-import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha } from "react-icons/si";
+import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha, SiJira, SiRubyonrails, SiRubysinatra, SiJquery, SiChai, SiGraphql, SiMicrosoftsharepoint, SiMicrosoftword, SiMicrosoftpowerpoint, SiMicrosoftaccess, SiMicrosoftteams, SiMicrosoftexcel, SiWindows, SiMicrosoftexchange, SiCss3, SiHtml5 } from "react-icons/si";
 import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
 import { IoCopyOutline } from "react-icons/io5";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
 import animationData from "@/data/confetti.json";
 import { Pendulum } from "./Pendulum";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow, FaAws, FaAngular } from "react-icons/fa";
 
 export const BentoGrid = ({
 	className,
@@ -70,6 +70,8 @@ export const BentoGridItem = ({
 		navigator.clipboard.writeText(text);
 		setCopied(true);
 	};
+
+	const toolbox = techStacks.filter((tech) => tech.renderInToolbox);
 
 	return (
 		<div
@@ -130,9 +132,9 @@ export const BentoGridItem = ({
 				{/* Infinite moving cards */}
 				{id === "2" && (
 					<>
-						<div className="absolute bottom-0 xs:bottom-4">
+						<div className="absolute bottom-0 xxs:bottom-4">
 							<TechStackInfiniteCards
-								items={techStacks}
+								items={toolbox}
 								direction="left"
 								speed="normal"
 							/>
@@ -204,81 +206,191 @@ export const techStacks = [
 	{
 		"icon": <TbBrandReact />,
 		"title": "React",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandNextjs />,
 		"title": "Next.js",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandTailwind />,
 		"title": "TailwindCSS",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandTypescript />,
 		"title": "TypeScript",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandNodejs />,
 		"title": "Node.js",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <SiExpress />,
 		"title": "Express",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <SiMongodb />,
 		"title": "MongoDB",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandPrisma />,
 		"title": "Prism",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <SiMeteor />,
 		"title": "Meteor.js",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandSvelte />,
 		"title": "Svelte",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandDocker />,
 		"title": "Docker",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <SiSqlite />,
 		"title": "SQLite",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandGit />,
 		"title": "Git",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandGithub />,
 		"title": "GitHub",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <TbBrandFirebase />,
 		"title": "Firebase",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <SiPostgresql />,
 		"title": "PostgreSQL",
+		"renderInToolbox": true,
 	}, 
 	{
 		"icon": <SiPostman />,
 		"title": "Postman",
+		"renderInToolbox": true,
 	},
 	{
 		"icon": <SiPocketbase />,
 		"title": "Pocketbase",
+		"renderInToolbox": true,
 	},
 	{
 		"icon": <SiPlaywright />,
 		"title": "Playwright",
+		"renderInToolbox": true,
 	},
 	{
 		"icon": <SiMocha />,
 		"title": "Mocha",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <FaAws />,
+		"title": "AWS",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiJira />,
+		"title": "Jira",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <FaAngular />,
+		"title": "AngularJS",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiRubyonrails />,
+		"title": "Ruby on Rails",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiRubysinatra />,
+		"title": "Sinatra",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiJquery />,
+		"title": "jQuery",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiChai />,
+		"title": "Chai",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiGraphql />,
+		"title": "GraphQL",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftteams />,
+		"title": "Microsoft Teams",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftaccess />,
+		"title": "Microsoft Access",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftexcel />,
+		"title": "Microsoft Excel",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftpowerpoint />,
+		"title": "Microsoft Powerpoint",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftword />,
+		"title": "Microsoft Word",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftsharepoint />,
+		"title": "Microsoft SharePoint",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiHtml5 />,
+		"title": "HTML",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiCss3 />,
+		"title": "CSS",
+		"renderInToolbox": true,
+	},
+	{
+		"icon": <SiWindows />,
+		"title": "Windows Server",
+		"renderInToolbox": false,
+	},
+	{
+		"icon": <SiMicrosoftexchange />,
+		"title": "Microsoft Exchange",
+		"renderInToolbox": false,
 	},
 ]

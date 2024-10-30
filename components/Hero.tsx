@@ -41,10 +41,10 @@ export const Hero = () => {
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center">
 					<h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Michael N. Gatewood</h2>
 					<TextGenerateEffect
-						className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
+						className="text-2xl xxs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
 						words="Multi-Disciplined"
 					/>
-					<div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mb-6 text-purple font-bold">
+					<div className="text-2xl xxs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mb-6 text-purple font-bold">
 						<FlipWords words={words} />
 					</div>
 					<p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-2xl">Let's build something together!</p>
