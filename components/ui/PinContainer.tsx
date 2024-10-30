@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, MouseEvent } from "react";
+import React, { useState, MouseEvent } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -110,7 +110,6 @@ export const PinPerspective = ({
 			<div className=" w-full h-full -mt-7 flex-none  inset-0" style={{ visibility: isHovering ? "visible" : "hidden" }}>
 				{/* Make this div hidden when hovered = false */}
 				<div className="absolute top-0 inset-x-0 flex justify-center">
-					{/* Changed <a> tag to <div> in order to prevent hydration errors due to nested <a> tags */}
 					<a
 						href={href}
 						target={"_blank"}

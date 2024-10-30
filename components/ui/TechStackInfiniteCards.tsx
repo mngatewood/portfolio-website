@@ -73,7 +73,7 @@ export const TechStackInfiniteCards = ({
 		<div
 			ref={containerRef}
 			className={cn(
-				"scroller relative z-20 overflow-hidden",
+				"scroller relative z-30 overflow-hidden",
 				className
 			)}
 		>
@@ -85,9 +85,9 @@ export const TechStackInfiniteCards = ({
 					pauseOnHover && "hover:[animation-play-state:paused]"
 				)}
 			>
-				{items.map((item, idx) => (
+				{items.map((item) => (
 					<li
-						className="relative rounded-2xl border flex-shrink-0 border-slate-700 w-20 h-20"
+						className="relative rounded-2xl border flex-shrink-0 border-slate-700 w-24 h-20"
 						style={{
 							background:
 								"linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -98,21 +98,12 @@ export const TechStackInfiniteCards = ({
 							aria-hidden="true"
 							className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
 						></div>
-						{/* <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-							{item.quote}
-						</span> */}
 						<div className="relative h-full z-20">
-							<div className="flex flex-col justify-center items-center h-full gap-1">
-								<div className="text-xs leading-[1.6] text-gray-400 font-normal">
-									<IconContext.Provider value={{ size: '2rem' }}>
-										{item.icon}
-									</IconContext.Provider>
-								</div>
-								<div className="text-xs leading-[1.6] text-gray-400 font-normal">
-									<IconContext.Provider value={{ size: '70px' }}>
-										{item.title}
-									</IconContext.Provider>
-								</div>
+							<div className="flex flex-col justify-center items-center h-full gap-1 text-xs text-gray-400 font-normal">
+								<IconContext.Provider value={{ size: '2rem' }}>
+									{item.icon}
+								</IconContext.Provider>
+								{item.title}
 							</div>
 						</div>
 					</li>
