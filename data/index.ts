@@ -125,6 +125,14 @@ export const navItems = [
 		name: "Projects",
 		link: "#projects",
 	},
+	{
+		name: "Testimonials",
+		link: "#testimonials",
+	},
+	{
+		name: "Experience",
+		link: "#experience",
+	},
 ]
 
 export const testimonials = [
@@ -146,4 +154,57 @@ export const testimonials = [
 		title: "Systems Services NCOIC, Nevada Army National Guard",
 		profile: "/profile3.jpeg",
 	},
+	{
+		quote: "Mr. Gatewood was ordered to full-time military duty in October of 2013, yet continued to assist the center in evenings and weekends.  He went above and beyond the highest expectations by always helping out during his free time in order to ensure that the Center continued to move forward. In September of 2014, the Saint Therese Center HIV Outreach presented Mr. Gatewood the Blue Rose of Safety and Prevention Award.",
+		name: "Joseph I. O'Brien, O.P.",
+		title: "Executive Director, Saint Therese Center HIV Outreach",
+		profile: "/profile4.jpg",
+	}
 ];
+
+export const experiences = [
+	{
+		id: "1",
+		title: "Full-Stack Developer",
+		description: "Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver high quality products on-time and within scope. Worked closely with cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.",
+		company: "Coin Cloud Inc.",
+		companyLink: "https://coincloudatm.com/",
+		location: "Las Vegas, NV",
+		thumbnail: "/experience1w.jpeg",
+		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+		iconList: ["AngularJS", "Meteor.js", "MongoDB", "TypeScript", "Node.js", "AWS", "Docker", "Jira", "Git", "GitHub", "Postman"]
+	},
+	{
+		id: "2",
+		title: "Software Engineering Student",
+		description: "Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the '14er' club by graduating from both Front-End and Back-End Engineering programs.",
+		company: "Turing School of Software and Design",
+		companyLink: "https://turing.edu/",
+		location: "Denver, CO",
+		thumbnail: "/experience2.jpeg",
+		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+		iconList: ["React", "PostgreSQL", "Mocha", "Chai", "GraphQL", "jQuery", "Ruby on Rails", "Sinatra", "Git", "GitHub", "Postman"]
+	},
+	{
+		id: "3",
+		title: "Human Resources Manager",
+		description: "Trained, supervised, and mentored staff in oversight and management of postal operations and personnel accountability for entire U.S. Central Command at Camp Arifjan, Kuwait. Provided direction and support to subordinate postal and accountability teams of more than 300 personnel and reported daily status to Brigade and Theater command staff.",
+		company: "United States Army",
+		companyLink: "https://www.army.mil/",
+		location: "Southwest Asia & Fort Carson, CO",
+		thumbnail: "/experience3w.jpeg",
+		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+		iconList: ["Microsoft Teams", "Microsoft Access", "Microsoft Excel", "Microsoft Powerpoint", "Microsoft Word", "Microsoft SharePoint"]
+	},
+	{
+		id: "4",
+		title: "Volunteer and Technical Consultant",
+		description: "Developed a responsive e-commerce website for marketing and processing donations. Established, installed, and maintained an organizational standard for software, hardware and telephony, including a corporate network and server. Installed and monitored security camera system. Provided desktop support to staff and volunteers.",
+		company: "Saint Therese Center",
+		companyLink: "https://www.facebook.com/STCLV18/",
+		location: "Henderson, NV",
+		thumbnail: "/experience4.png",
+		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+		iconList: ["HTML", "CSS", "Windows Server", "Microsoft Exchange","Microsoft Access", "Microsoft Excel", "Microsoft Powerpoint", "Microsoft Word"]
+	},
+]
