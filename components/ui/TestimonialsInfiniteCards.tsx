@@ -82,7 +82,7 @@ export const TestimonialInfiniteCards = ({
 			<ul
 				ref={scrollerRef}
 				className={cn(
-					" flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
+					" flex min-w-full shrink-0 gap-16 lg:pt-12 py-4 w-max md:mb-8 flex-nowrap",
 					start && "animate-scroll ",
 					pauseOnHover && "hover:[animation-play-state:paused]"
 				)}

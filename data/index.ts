@@ -155,7 +155,7 @@ export const testimonials = [
 		profile: "/profile3.jpeg",
 	},
 	{
-		quote: "Mr. Gatewood was ordered to full-time military duty in October of 2013, yet continued to assist the center in evenings and weekends.  He went above and beyond the highest expectations by always helping out during his free time in order to ensure that the Center continued to move forward. In September of 2014, the Saint Therese Center HIV Outreach presented Mr. Gatewood the Blue Rose of Safety and Prevention Award.",
+		quote: "Mr. Gatewood was ordered to full-time military duty in October of 2013, yet continued to assist the center in evenings and weekends.  He went above and beyond the highest expectations by always helping out during his free time in order to ensure that the Center continued to move forward.",
 		name: "Joseph I. O'Brien, O.P.",
 		title: "Executive Director, Saint Therese Center HIV Outreach",
 		profile: "/profile4.jpg",
@@ -165,7 +165,7 @@ export const testimonials = [
 export const experiences = [
 	{
 		id: "1",
-		title: "Full-Stack Developer",
+		title: "Software Development Technical Lead",
 		description: "Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver high quality products on-time and within scope. Worked closely with cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.",
 		company: "Coin Cloud Inc.",
 		companyLink: "https://coincloudatm.com/",
@@ -206,5 +206,39 @@ export const experiences = [
 		thumbnail: "/experience4.png",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
 		iconList: ["HTML", "CSS", "Windows Server", "Microsoft Exchange","Microsoft Access", "Microsoft Excel", "Microsoft Powerpoint", "Microsoft Word"]
+	},
+]
+
+export const alignment = [
+	{
+		id: "1",
+		title: "Why You Want to Work With Me",
+		list: [
+			"Proficient in a number of programming languages and frameworks",
+			"Able to solve complex problems in a timely and efficient manner",
+			"Highly versatile and eager to contribute where needed",
+			"Excellent communication skills and a positive vibe",
+			"Highly experienced professional with a strong foundation in multiple disciplines",
+			"Proven track record of delivering high-quality results",
+			"Always excited to learn new technologies and take on new challenges",
+		],
+		animationSpeed: 5.1,
+		containerClassName: "bg-pink-900",
+		colors: [[125, 211, 252]],
+	},
+	{
+		id: "2",
+		title: "Why I Want to Work With You",
+		list: [
+			"Opinions from all levels of the organization are valued and processes are employee-driven.",
+			"Excellence and commitment are rewarded by promoting from within.",
+			"The team exhibits a startup-like enthusiasm and is able to pivot when necessary.",
+			"Employees are treated with respect and dignity; from interns to senior executives.",
+			"Comradery and collaboration is promoted through active inclusion and communication.",
+			"Team members are commended and recognized for going above and beyond.",
+		],
+		animationSpeed: 3,
+		containerClassName:"bg-indigo-900",
+		colors: [[125, 211, 252]],
 	},
 ]

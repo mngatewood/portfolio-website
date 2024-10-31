@@ -6,8 +6,8 @@ export const Testimonials = () => {
 	return (
 		<section id="testimonials">
 			<h1 className="heading p-8">Testimonials</h1>
-			<div className="flex flex-col items-center mt-4">
-				<div className="h-[47vh] md:h-[28rem] rounded-md flex flex-col antialiased items-center relative overflow-hidden">
+			<div className="flex flex-col items-center my-4">
+				<div className="rounded-md flex flex-col antialiased items-center relative overflow-hidden">
 					<TestimonialInfiniteCards
 						items={testimonials}
 						direction="right"

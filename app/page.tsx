@@ -5,6 +5,7 @@ import { Projects } from "@/components/Projects"
 import { navItems } from "@/data"
 import { Testimonials } from "@/components/Testimonials"
 import { Experience } from "@/components/Experience"
+import { Alignment } from "@/components/Alignment"
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 				<Projects />
 				<Testimonials />
 				<Experience />
+				<Alignment />
 			</div>
 		</main>
 	)
