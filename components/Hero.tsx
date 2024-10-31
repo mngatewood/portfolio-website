@@ -48,7 +48,7 @@ export const Hero = () => {
 						<FlipWords words={words} />
 					</div>
 					<p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-2xl">Let's build something together!</p>
-					<a href="#" title="See My Projects">
+					<a href="#projects" title="See My Projects">
 						<BorderMagicButton
 							text="See My Projects"
 							icon={<FaLocationArrow />}
