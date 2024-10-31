@@ -7,15 +7,20 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export const Experience = () => {
 	return (
-		<section id="experience" className="mb-96">
+		<section id="experience">
 			<h1 className="heading p-8">Professional Experience</h1>
-			<div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-4">
+			<div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-8 mb-4 ">
 				{ experiences.map((job) => (
 					<Button 
 						key={job.id + "-" + job.companyLink}
 						duration={Math.floor(Math.random() * 10000) + 10000}
 						borderRadius='1.75rem'
 						className="flex-1 p-6 text-white border-neutral-200 dark:border-slate-800 cursor-default"
+						style={{
+							backgroundImage:
+								"linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+						}}
+
 					>
 						<div className="flex lg:flex-col md:flex-row flex-col justify-center items-start group">
 							<div className="flex md:items-start items-center lg:w-full md:w-2/3">
