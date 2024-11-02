@@ -67,7 +67,7 @@ export const PinContainer = ({
 	return (
 		<div
 			className={cn(
-				"relative group/pin z-50 cursor-pointer",
+				"relative group/pin z-40 cursor-pointer",
 				containerClassName
 			)}
 			onMouseEnter={onMouseEnter}
@@ -88,7 +88,7 @@ export const PinContainer = ({
 					}}
 					className="absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[2px_2px_6px] shadow-purple bg-black border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
 				>
-					<div className={cn(" relative z-50 ", className)}>{children}</div>
+					<div className={cn(" relative z-40 ", className)}>{children}</div>
 				</div>
 			</div>
 			<PinPerspective title={title} href={href} isHovering={isHovering}/>

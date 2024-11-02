@@ -10,7 +10,7 @@ export function Alignment() {
 	return (
 		<section id="alignment">
 			<h1 className="heading py-8">Cultural Alignment</h1>
-			<div className="flex flex-col lg:flex-row items-center justify-between gap-16 mx-auto p-8 my-4 ">
+			<div className="flex flex-col lg:flex-row items-center justify-between gap-16 mx-auto py-8 my-4 ">
 				{ alignment.map((item) => (
 					<Card 
 						key={item.id}
