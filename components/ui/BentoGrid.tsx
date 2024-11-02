@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Lottie from "react-lottie";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
@@ -11,7 +10,8 @@ import { IoCopyOutline } from "react-icons/io5";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
 import animationData from "@/data/confetti.json";
 import { Pendulum } from "./Pendulum";
-import { FaLocationArrow, FaAws, FaAngular } from "react-icons/fa";
+import { FaLocationArrow, FaAws, FaAngular, FaLinkedinIn } from "react-icons/fa";
+import { CgFileDocument } from "react-icons/cg";
 
 export const BentoGrid = ({
 	className,
@@ -53,23 +53,6 @@ export const BentoGridItem = ({
 	spareImg?: string;
 	spareImgClassName?: string;
 }) => {
-
-	const [copied, setCopied] = useState(false);
-
-	const defaultOptions = {
-		loop: copied,
-		autoplay: copied,
-		animationData: animationData,
-		rendererSettings: {
-			preserveAspectRatio: "xMidYMid slice",
-		},
-	};
-
-	const handleCopy = () => {
-		const text = "michael@mngatewood.com";
-		navigator.clipboard.writeText(text);
-		setCopied(true);
-	};
 
 	const toolbox = techStacks.filter((tech) => tech.renderInToolbox);
 
@@ -168,11 +151,11 @@ export const BentoGridItem = ({
 
 				{/* See my resume button */}
 				{id === "5" && (
-					<div className="flex absolute bottom-0 sm:bottom-0 md:bottom-24 lg:bottom-28 left-4 sm:left-5 md:left-5 lg:left-10 m-0">
+					<div className="flex absolute bottom-3 md:bottom-28 lg:bottom-36 left-4 sm:left-5 md:left-5 lg:left-10 m-0">
 						<a href="/resume/" title="See My Resume" className="z-10">
 							<BorderMagicButton
-								text="See My Resume"
-								icon={<FaLocationArrow />}
+								text="View My Resume"
+								icon={<CgFileDocument />}
 								position="right"
 							/>
 						</a>
@@ -180,20 +163,15 @@ export const BentoGridItem = ({
 				)}
 
 				{id === "7" && (
-					<div className="flex relative m-0">
-
-						{/* Confetti animation */}
-						<div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
-							<Lottie options={defaultOptions} height={200} width={400} />
-						</div>
-
-						<BorderMagicButton
-							text={copied ? "Email is Copied!" : "Copy my email address"}
-							icon={<IoCopyOutline />}
-							position="left"
-							handleClick={handleCopy}
-							otherClasses="!bg-[#161A31] mx-auto mt-0 mb-6"
-						/>
+					<div className="flex justify-center relative m-0">
+						<a href="https://www.linkedin.com/in/mngatewood/" title="Connect on LinkedIn" className="z-10">
+							<BorderMagicButton
+								text={"Connect on LinkedIn"}
+								icon={<FaLinkedinIn />}
+								position="left"
+								otherClasses="!bg-[#161A31] mx-auto mt-0 mb-6"
+							/>
+						</a>
 					</div>
 				)}
 			</div>

@@ -140,8 +140,14 @@ const config = {
 						transform: "translate(calc(-50% - 0.5rem))",
 					},
 				},
+				meteor: {
+					"0%": { transform: "rotate(180deg) translateX(0)", opacity: "1" },
+					"70%": { opacity: "1" },
+					"100%": { transform: "rotate(180deg) translateX(-1280px)", opacity: "0" },
+				}
 			},
 			animation: {
+				"meteor-effect": "meteor 5s linear infinite",
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
 				spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -159,6 +165,10 @@ const config = {
 				"xs": "480px",
 				"xl": "1400px",
 				"2xl": "2000px",
+				// Calendly breakpoints
+				"cal-md": "682px",
+				"cal-1032": "1032px",
+				"cal-lg": "1033px",
 			}
 		},
 	},
