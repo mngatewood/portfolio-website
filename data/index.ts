@@ -62,7 +62,7 @@ export const gridItems = [
 	},
 	{
 		id: "7",
-		title: "Let's chat!",
+		title: "Let's connect!",
 		description: "Want to learn more?",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
 		imgClassName: "",
@@ -133,6 +133,10 @@ export const navItems = [
 		name: "Experience",
 		link: "#experience",
 	},
+	{
+		name: "Contact",
+		link: "#footer",
+	}
 ]
 
 export const testimonials = [
