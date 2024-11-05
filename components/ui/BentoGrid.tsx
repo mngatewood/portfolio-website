@@ -6,7 +6,6 @@ import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBran
 import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha, SiJira, SiRubyonrails, SiRubysinatra, SiJquery, SiChai, SiGraphql, SiMicrosoftsharepoint, SiMicrosoftword, SiMicrosoftpowerpoint, SiMicrosoftaccess, SiMicrosoftteams, SiMicrosoftexcel, SiWindows, SiMicrosoftexchange, SiCss3, SiHtml5 } from "react-icons/si";
 import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
-import { Pendulum } from "./Pendulum";
 import { FaAws, FaAngular, FaLinkedinIn } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
