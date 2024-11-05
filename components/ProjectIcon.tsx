@@ -10,7 +10,7 @@ export const ProjectIcon = ({title}: {title: string}) => {
 	useEffect(() => {
 		const icon = techStacks.find((tech) => tech.title === title);
 		setIconElement(() => icon?.icon ?? null);
-	}, []);
+	}, [title]);
 
 	return (
 		<IconContext.Provider value={{ color: '#38BDF8', size: "1.5rem" }} >

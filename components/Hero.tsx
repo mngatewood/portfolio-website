@@ -4,26 +4,9 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { BorderMagicButton } from './ui/BorderMagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import { FlipWords } from './ui/FlipWords'
+import { titles } from '@/data';
 
 export const Hero = () => {
-
-	const words = [
-		"Software Engineer", 
-		"Problem-Solver", 
-		"Collaborator", 
-		"Army Veteran",
-		"Team Player",
-		"Communicator", 
-		"Learner", 
-		"Father & Husband",
-		"Leader", 
-		"Creator", 
-		"Professional", 
-		"Contributor", 
-		"Go-Getter",
-		"Tinkerer",
-		"Boardgamer"
-	]
 
   	return (
 		<div className="flex flex-col justify-center items-center h-screen pb-20 pt-36">
@@ -45,9 +28,9 @@ export const Hero = () => {
 						words="Multi-Disciplined"
 					/>
 					<div className="text-2xl xxs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center mb-6 text-purple font-bold">
-						<FlipWords words={words} />
+						<FlipWords words={titles} />
 					</div>
-					<p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-2xl">Let's build something together!</p>
+					<p className="text-center md:tracking-wider mb-8 text-sm md:text-lg lg:text-2xl">Let&apos;s build something together!</p>
 					<a href="#projects" title="See My Projects">
 						<BorderMagicButton
 							text="See My Projects"

@@ -42,7 +42,7 @@ const Card = ({
 		<div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			className="border border-black/[0.2] group/canvas-card bg-cardBg lg:h-[48rem] h-[30rem] flex items-center justify-center dark:border-white/[0.2] w-full mx-auto p-4 relative"
+			className="border border-black/[0.2] group/canvas-card bg-cardBg lg:h-[48rem] h-[30rem] flex items-center justify-start dark:border-white/[0.2] w-full mx-auto p-4 relative"
 			style={{
 				backgroundImage:
 					"linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
@@ -89,6 +89,7 @@ const AlignmentTitle = ({text}: {text: string}) => {
 	);
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Icon = ({ className, ...rest }: any) => {
 	return (
 		<svg

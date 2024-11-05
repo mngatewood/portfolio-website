@@ -31,7 +31,7 @@ export const Cover = ({
 			);
 			setBeamPositions(positions);
 		}
-	}, [ref.current]);
+	}, [ref.current]); // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
 		<div
@@ -130,9 +130,9 @@ export const Cover = ({
 				{children}
 			</motion.span>
 			<CircleIcon className="absolute -right-[2px] -top-[2px]" />
-			<CircleIcon className="absolute -bottom-[2px] -right-[2px]" delay={0.4} />
-			<CircleIcon className="absolute -left-[2px] -top-[2px]" delay={0.8} />
-			<CircleIcon className="absolute -bottom-[2px] -left-[2px]" delay={1.6} />
+			<CircleIcon className="absolute -bottom-[2px] -right-[2px]" />
+			<CircleIcon className="absolute -left-[2px] -top-[2px]" />
+			<CircleIcon className="absolute -bottom-[2px] -left-[2px]" />
 		</div>
 	);
 };
@@ -204,10 +204,10 @@ export const Beam = ({
 
 export const CircleIcon = ({
 	className,
-	delay,
+	// delay,
 }: {
 	className?: string;
-	delay?: number;
+	// delay?: number;
 }) => {
 	return (
 		<div

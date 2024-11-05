@@ -1,16 +1,12 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
 import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha, SiJira, SiRubyonrails, SiRubysinatra, SiJquery, SiChai, SiGraphql, SiMicrosoftsharepoint, SiMicrosoftword, SiMicrosoftpowerpoint, SiMicrosoftaccess, SiMicrosoftteams, SiMicrosoftexcel, SiWindows, SiMicrosoftexchange, SiCss3, SiHtml5 } from "react-icons/si";
 import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
-import { IoCopyOutline } from "react-icons/io5";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
-import animationData from "@/data/confetti.json";
-import { Pendulum } from "./Pendulum";
-import { FaLocationArrow, FaAws, FaAngular, FaLinkedinIn } from "react-icons/fa";
+import { FaAws, FaAngular, FaLinkedinIn } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 export const BentoGrid = ({
@@ -122,25 +118,12 @@ export const BentoGridItem = ({
 								speed="normal"
 							/>
 						</div>
-						<div className="absolute w-full h-full z-20 bottom-0" style={{boxShadow: "10px 0 20px 0 rgb(2, 0, 36) inset, -10px 0 20px 0 rgb(2, 0, 36) inset"}} />
-					</>
-				)}
-
-				{/* Background dots, gradient and pendulum */}
-				{id === "3" && (
-					<>
-						<div className="absolute top-0 w-full h-full dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex items-center">
-							{/* Radial gradient for the container to give a faded look */}
-							<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-cardBg bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-							<div className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
-							</div>
-						</div>
-						<Pendulum />
+						<div className="absolute w-full h-full z-30 bottom-0" style={{boxShadow: "10px 0 20px 0 rgb(2, 0, 36) inset, -10px 0 20px 0 rgb(2, 0, 36) inset"}} />
 					</>
 				)}
 
 				{/* Background grid, gradient and pendulum */}
-				{["4", "6"].includes(id) && (
+				{["3", "4", "6"].includes(id) && (
 					<div className="absolute top-0 w-full h-full dark:bg-cardBg dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] flex items-center justify-center">
 						{/* Radial gradient for the container to give a faded look */}
 						<div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-cardBg bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
