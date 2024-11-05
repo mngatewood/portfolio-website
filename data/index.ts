@@ -21,8 +21,8 @@ export const gridItems = [
 	},
 	{
 		id: "3",
-		title: "Yes, I can!",
-		description: "Team player with a positive mindset and empathy for others.",
+		title: "Rooted in fundamentals, focused on excellence!",
+		description: "Software development expertise rooted in proven concepts and design principles",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-2",
 		imgClassName: "",
 		titleClassName: "justify-center",
@@ -31,15 +31,14 @@ export const gridItems = [
 	},
 	{
 		id: "4",
-		title: "Advocate for test-driven development, modularity, version control and KISS!",
-		description: "Familiar with fundamental software development concepts and design principles",
+		title: "Team player with a positive mindset and empathy for others.",
+		description: "History of building meaningful relationships through respect, honesty, and integrity.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
 		imgClassName: "",
 		titleClassName: "justify-center",
 		img: "",
 		spareImg: "",
 	},
-
 	{
 		id: "5",
 		title: "Seasoned veteran with a breadth of professional experience in a variety of roles and industries",
@@ -76,7 +75,7 @@ export const projects = [
 	{
 		id: "1",
 		title: "Keys & Cogs",
-		description: "Keys & Cogs is a digital adaptation of the popular tabletop game, So Clover!",
+		description: "A digital adaptation of the popular tabletop word-association game, So Clover!",
 		img: "/p1.png",
 		iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha"],
 		link: "https://mngatewood-keys-cogs.meteorapp.com/",
@@ -86,7 +85,7 @@ export const projects = [
 	{
 		id: "2",
 		title: "P.I. Link",
-		description: "PI Link is a digital reimplementation of the board game titled Detective Club.",
+		description: "A companion app for the deduction and bluffing board game, Detective Club.",
 		img: "/p2.png",
 		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
 		link: "https://pi-link-web-production.up.railway.app/",
@@ -107,7 +106,7 @@ export const projects = [
 	{
 		id: "4",
 		title: "Michael N. Gatewood Portfolio",
-		description: "This is the digital portfolio for Michael N. Gatewood.",
+		description: "My official website for potential clients, employers and others to learn more about me.",
 		img: "/p4.png",
 		iconList: ["React", "Next.js", "TailwindCSS", "TypeScript"],
 		link: "https://mngatewood.com",
@@ -163,7 +162,13 @@ export const testimonials = [
 		name: "Joseph I. O'Brien, O.P.",
 		title: "Executive Director, Saint Therese Center HIV Outreach",
 		profile: "/profile4.jpg",
-	}
+	},
+	{
+		quote: "I had the pleasure of working alongside Michael, a software engineer who truly stands out for his ability to quickly master new technologies and, even more impressively, share his knowledge with the team. Michael's eagerness to learn is matched by his enthusiasm to teach, making complex topics accessible to everyone, especially new team members.",
+		name: "Quinn Krug",
+		title: "Data Analyst, CI Web Group",
+		profile: "/profile5.jpeg",
+	},
 ];
 
 export const experiences = [
@@ -218,12 +223,12 @@ export const alignment = [
 		id: "1",
 		title: "Why You Want to Work With Me",
 		list: [
-			"Proficient in a number of programming languages and frameworks",
+			"Proficient in a number of programming languages, frameworks, and tools",
 			"Able to solve complex problems in a timely and efficient manner",
-			"Highly versatile and eager to contribute where needed",
-			"Excellent communication skills and a positive vibe",
 			"Highly experienced professional with a strong foundation in multiple disciplines",
-			"Proven track record of delivering high-quality results",
+			"Proven track record of building successful teams and delivering quality results",
+			"Excellent communication skills with positive energy and friendly demeanor",
+			"Highly versatile and eager to contribute when and where needed",
 			"Always excited to learn new technologies and take on new challenges",
 		],
 		animationSpeed: 5.1,
@@ -234,15 +239,35 @@ export const alignment = [
 		id: "2",
 		title: "Why I Want to Work With You",
 		list: [
-			"Opinions from all levels of the organization are valued and processes are employee-driven.",
-			"Excellence and commitment are rewarded by promoting from within.",
-			"The team exhibits a startup-like enthusiasm and is able to pivot when necessary.",
-			"Employees are treated with respect and dignity; from interns to senior executives.",
-			"Comradery and collaboration is promoted through active inclusion and communication.",
+			"Opinions from all members of the team are valued and processes are employee-driven.",
+			"Excellence and dedication are rewarded by promoting from within the organization.",
+			"Comradery and collaboration is promoted through trust, communication and celebrating successes.",
 			"Team members are commended and recognized for going above and beyond.",
+			"The company demonstrates commitment to its employees by prioritizing professional development.",
+			"The team exhibits a startup-like enthusiasm and is able to pivot when necessary.",
+			"Every individual contributor is treated with respect and dignity.",
 		],
 		animationSpeed: 3,
 		containerClassName:"bg-indigo-900",
 		colors: [[125, 211, 252]],
 	},
+]
+
+export const titles = [
+	"Software Engineer",
+	"Problem-Solver",
+	"Collaborator",
+	"Army Veteran",
+	"Communicator",
+	"Learner",
+	"Father & Husband",
+	"Leader",
+	"Craftsman",
+	"Musician",
+	"Team Builder",
+	"Professional",
+	"Contributor",
+	"Go-Getter",
+	"Tinkerer",
+	"Boardgamer"
 ]
