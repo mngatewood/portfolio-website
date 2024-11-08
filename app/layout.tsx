@@ -23,14 +23,14 @@ export const metadata: Metadata = {
 				alt: "A workspace with a laptop, bookshelf and a frame on the wall with military decorations and photos.",
 				width: 1200,
 				height: 628,
-				url: "https://portfolio-website-production.up.railway.app/opengraph-image.png",
+				url: "https://portfolio-website-production.up.railway.app/opengraph.png",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Michael N. Gatewood",
-		images: [{ url: "https://portfolio-website-production.up.railway.app/opengraph-image.png" }],
+		images: [{ url: "https://portfolio-website-production.up.railway.app/opengraph.png" }],
 	},
 };
 
