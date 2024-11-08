@@ -10,7 +10,7 @@ export const Testimonials = () => {
 				<div className="rounded-md flex flex-col antialiased items-center relative overflow-hidden">
 					<TestimonialInfiniteCards
 						items={testimonials}
-						direction="right"
+						direction="left"
 						speed="slow"
 					/>
 				</div>
