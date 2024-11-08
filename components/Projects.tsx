@@ -13,9 +13,9 @@ export const Projects = () => {
 	return (
 		<section id="projects">
 			<h1 className="heading py-12">Project Spotlight</h1>
-			<div className="flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 2xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4">
+			<div className="flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4">
 				{ projects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
-					<div key={id} className="lg:h-[32rem] 2xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center">
+					<div key={id} className="lg:h-[32rem] 4xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center">
 						<PinContainer title={linkTitle} href={link}>
 							<div className="relative flex items-center justify-center md:max-w-[570px] lg:w-[40vw] w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
 								<div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
@@ -44,7 +44,7 @@ export const Projects = () => {
 								{description}
 							</p>
 						</ PinContainer>
-						<div className="relative top-0 xxs:-top-0 md:-top-0 lg:top-16 2xl:top-48 flex items-center justify-between md:max-w-[570px] lg:w-[40vw] w-[80vw] mt-7 mb-3 z-40">
+						<div className="relative top-0 xxs:-top-0 md:-top-0 lg:top-16 42xl:top-48 flex items-center justify-between md:max-w-[570px] lg:w-[40vw] w-[80vw] mt-7 mb-3 z-40">
 							<div className="flex items-center">
 								{iconList.map((icon, index) => (
 									<div key={icon} className="border border-white/[0.3] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{

@@ -99,11 +99,13 @@ export const BentoGridItem = ({
 
 				{/* Title and description */}
 				<div className={cn(titleClassName, "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5 lg:p-10 z-10")}>
-					<div className={`${id !== "7" && "max-w-96"} font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-lg z-10`}>
-						{description}
-					</div>
-					<div className={`${id !== "7" && "max-w-96"} font-sans font-bold text-lg lg:text-3xl z-10`}>
-						{title}
+					<div className={`${!["5", "7"].includes(id) && 'bg-black-100 bg-opacity-60 rounded-lg w-fit shadow-[10px_10px_15px_20px_rgba(2,0,36,0.4),-10px_-10px_15px_20px_rgba(2,0,36,0.4)]'}`}>
+						<div className={`${id !== "7" && "max-w-96"} font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-lg z-10`}>
+							{description}
+						</div>
+						<div className={`${id !== "7" && "max-w-96"} font-sans font-bold text-lg lg:text-3xl z-10`}>
+							{title}
+						</div>
 					</div>
 				</div>
 
@@ -135,7 +137,7 @@ export const BentoGridItem = ({
 				{/* See my resume button */}
 				{id === "5" && (
 					<div className="flex absolute bottom-3 md:bottom-28 lg:bottom-36 left-4 sm:left-5 md:left-5 lg:left-10 m-0">
-						<a href="/resume/" title="See My Resume" className="z-10">
+						<a href="#resume" title="See My Resume" className="z-10">
 							<BorderMagicButton
 								text="View My Resume"
 								icon={<CgFileDocument />}

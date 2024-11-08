@@ -5,6 +5,7 @@ import { Projects } from "@/components/Projects"
 import { navItems } from "@/data"
 import { Testimonials } from "@/components/Testimonials"
 import { Experience } from "@/components/Experience"
+import { Resume } from "@/components/Resume"
 import { Alignment } from "@/components/Alignment"
 import { Footer } from "@/components/Footer"
 
@@ -18,6 +19,7 @@ export default function Home() {
 				<Projects />
 				<Testimonials />
 				<Experience />
+				<Resume />
 				<Alignment />
 				<Footer />
 			</div>

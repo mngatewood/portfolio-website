@@ -24,11 +24,23 @@ export const TestimonialInfiniteCards = ({
 }) => {
 	const containerRef = React.useRef<HTMLDivElement>(null);
 	const scrollerRef = React.useRef<HTMLUListElement>(null);
-
+	
 	useEffect(() => {
 		addAnimation();
 	}, []); // eslint-disable-line react-hooks/exhaustive-deps
 	const [start, setStart] = useState(false);
+	const [animating, setAnimating] = useState(true);
+
+	function pauseAnimation() {
+		if (scrollerRef.current) {
+			if (animating) {
+				scrollerRef.current.style.animationPlayState = "paused";
+			} else {
+				scrollerRef.current.style.animationPlayState = "running";
+			}
+			setAnimating(!animating);
+		}
+	}
 	function addAnimation() {
 		if (containerRef.current && scrollerRef.current) {
 			const scrollerContent = Array.from(scrollerRef.current.children);
@@ -81,6 +93,9 @@ export const TestimonialInfiniteCards = ({
 		>
 			<ul
 				ref={scrollerRef}
+				onClick={pauseAnimation}
+				onMouseEnter={pauseAnimation}
+				onMouseLeave={pauseAnimation}
 				className={cn(
 					" flex min-w-full shrink-0 gap-16 lg:pt-12 py-4 w-max md:mb-8 flex-nowrap",
 					start && "animate-scroll ",

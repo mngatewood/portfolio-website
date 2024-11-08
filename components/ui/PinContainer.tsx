@@ -122,7 +122,7 @@ export const PinPerspective = ({
 
 							<span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover/btn:opacity-40"></span>
 						</div>
-						<div className="absolute -bottom-5 -left-2 w-full text-xs text-center font-extralight uppercase">Go to live site</div>
+						<div className="absolute -bottom-5 -left-2 w-full text-xs text-center font-extralight uppercase"><span className="text-nowrap">Click to go to live site</span></div>
 					</a>
 				</div>
 
