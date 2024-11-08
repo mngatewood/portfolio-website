@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaAngleDoubleDown, FaAngleDoubleUp, FaFilePdf } from "react-icons/fa";
 
 export const Resume = () => {
-	const [expandResume, setExpandResume] = React.useState(false);
+	const [expandResume, setExpandResume] = useState(false);
 
 	const toggleExpand = () => {
 		const element = document.getElementById('resume');
