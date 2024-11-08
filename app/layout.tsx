@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
 	title: "Michael N. Gatewood",
-	description: "Michael Gatewood's professional portfolio. Michael Gatewood's professional portfolio.  Includes skills, projects, testimonials, professional experience, and contact information.",
+	description: "Michael Gatewood's professional portfolio.  Includes skills, projects, testimonials, professional experience, and contact information.",
 	openGraph: {
 		images: [
 			{
