@@ -30,6 +30,7 @@ export const Footer = () => {
 		const text = "michael@mngatewood.com";
 		navigator.clipboard.writeText(text);
 		setCopied(true);
+		setTimeout(() => setCopied(false), 5000);
 	};
 
 	return (
