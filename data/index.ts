@@ -1,7 +1,7 @@
 export const gridItems = [
 	{
 		id: "1",
-		title: "Agile problem-solver who remains composed under pressure",
+		title: "Agile problem-solver who remains composed under pressure.",
 		description: "Strong analytical skills enable rapid diagnosis and resolution of code issues while delivering precise and effective solutions.",
 		className: "lg:col-span-3 md:col-span-6 md:row-span-4",
 		imgClassName: "w-full h-full rounded-3xl",
@@ -22,7 +22,7 @@ export const gridItems = [
 	{
 		id: "3",
 		title: "Rooted in fundamentals, focused on excellence!",
-		description: "Software development expertise rooted in proven concepts and design principles",
+		description: "Software development expertise is rooted in proven concepts and design principles.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-2",
 		imgClassName: "",
 		titleClassName: "justify-center",
@@ -41,8 +41,8 @@ export const gridItems = [
 	},
 	{
 		id: "5",
-		title: "Seasoned veteran with a breadth of professional experience in a variety of roles and industries",
-		description: "Experience in Software Development, Human Resources, and Project Management",
+		title: "Seasoned veteran with a breadth of professional experience in a variety of roles and industries.",
+		description: "Experience in Software Development, Human Resources, and Project Management.",
 		className: "md:col-span-3 md:row-span-3",
 		imgClassName: "absolute right-0 bottom-0 w-60 mix-blend-overlay h-full md:w-96 sm:w-1/2",
 		titleClassName: "justify-center",
@@ -52,7 +52,7 @@ export const gridItems = [
 	{
 		id: "6",
 		title: "Excellent verbal, written and listening skills!",
-		description: "Effective at articulating complex ideas to colleagues and clients at all levels of the organization",
+		description: "Effective at articulating complex ideas to colleagues and clients at all levels of the organization.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
 		imgClassName: "",
 		titleClassName: "justify-center md:max-w-full",
