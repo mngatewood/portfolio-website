@@ -163,12 +163,23 @@ const config = {
 			screens: {
 				"xxs": "360px",
 				"xs": "480px",
-				"xl": "1400px",
-				"2xl": "2000px",
+				// sm: "640px",
+				// md: "768px",
+				// lg: "1024px",
+				"xl": "1280px",
+				"2xl": "1400px",
+				"3xl": "1536px",
+				"4xl": "2000px",
 				// Calendly breakpoints
 				"cal-md": "682px",
 				"cal-1032": "1032px",
 				"cal-lg": "1033px",
+			},
+			fontFamily: {
+				trebuchet: ["Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial", "sans-serif"],
+			},
+			transitionProperty: {
+				"max-height": "max-height",
 			}
 		},
 	},

@@ -36,11 +36,11 @@ export const Experience = () => {
 									className="lg:w-24 md:w-full md:max-w-36 xs:w-20 w-20 lg:h-24 md:h-full md:max-h-36 xs:h-20 h-20 rounded-3xl aspect-square"
 									/>
 								<div className="flex flex-col justify-between w-full text-start text-white-100 ms-5">
-									<h1 className="text-md xs:text-md md:text-2xl lg:text-xl xl:text-2xl font-bold">
+									<h1 className="text-md xs:text-md md:text-2xl lg:text-xl 2xl:text-2xl font-bold">
 										{job.title}
 									</h1>
 									<div className="flex flex-col justify-between text-xs xs:text-md">
-										<p className="mt-3 font-extrabold md:text-lg lg:text-sm xl:text-lg">
+										<p className="mt-3 font-extrabold md:text-lg lg:text-sm 2xl:text-lg">
 											{job.company}
 										</p>
 										<p className="font-semibold min-w-[35%]">
