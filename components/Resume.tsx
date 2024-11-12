@@ -26,8 +26,9 @@ export const Resume = () => {
 			<div className={`${expandResume ? 'max-h-[9999px]' : 'max-h-56 overflow-hidden bg-gradient-to-t from-slate-950'} px-4 py-8 sm:p-10 md:p-20 sm:m-5 m-0 md:m-10 bg-gray-100 text-black-100 transition-max-height duration-1000 ease-in-out`}>
 				<div className="flex md:flex-row flex-col justify-between items-center w-full mb-4 font-trebuchet">
 					<p className="text-2xl font-bold">Michael N. Gatewood<span className="text-0"> - </span></p>
-					<p className="text-lg">Software Engineer</p>
+					<p className="text-2xl">Software Engineer</p>
 				</div>
+				<p className="text-justify">Dedicated, results-driven engineer with expertise in front-end and back-end development.  An analytical problem-solver with an emphasis on quality and a can-do attitude.  Known for accomplishing goals in a fast-paced, deadline-driven environment.</p>
 				<div className="mt-4">
 					<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Experience</h2>
 					<div className="mb-4">
@@ -39,7 +40,7 @@ export const Resume = () => {
 							<h3>August 2019 – October 2022<span className="text-0">; </span></h3>
 							<h3 className="md:text-right text-left">Las Vegas, Nevada</h3>
 						</div>
-						<p className="text-justify"> Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver quality products on time and within scope. Worked closely with a cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.</p>
+						<p className="text-justify">Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver quality products on time and within scope. Worked closely with a cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.</p>
 					</div>
 					<div className="mb-4">
 						<div className="flex md:flex-row flex-col justify-between font-bold">
