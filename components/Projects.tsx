@@ -41,7 +41,7 @@ export const Projects = () => {
 								{title}
 							</h1>
 							<p className="lg:text-xl lg:font-normal lg:min-h-14 font-light text-sm line-clamp-2">
-								{description}
+								<div dangerouslySetInnerHTML={{ __html: description }}></div>
 							</p>
 						</ PinContainer>
 						<div className="relative top-0 xxs:-top-0 md:-top-0 lg:top-16 42xl:top-48 flex items-center justify-between md:max-w-[570px] lg:w-[40vw] w-[80vw] mt-7 mb-3 z-40">
