@@ -76,7 +76,7 @@ export const Resume = () => {
 							<h3>November 2017 – February 2019<span className="text-0">; </span></h3>
 							<h3 className="md:text-right text-left">Denver, Colorado</h3>
 						</div>
-						<p className="text-justify">Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the '14er' club by graduating from both Front-End and Back-End Engineering programs.</p>
+						<p className="text-justify">Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the &apos;14er&apos; club by graduating from both Front-End and Back-End Engineering programs.</p>
 					</div>
 				</div>
 				<div className="mt-4">
