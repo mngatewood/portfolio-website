@@ -39,7 +39,7 @@ export const Footer = () => {
 				<div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
 				<div className="relative flex flex-col justify-evenly bg-gray-900 px-4 py-8 h-full overflow-hidden rounded-2xl shadow-[inset_-2px_-2px_6px_36px_rgba(0,3,25,0.8),_2px_2px_6px_18px_rgba(0,3,25,0.8)]">
 					<h1 className="heading mx-auto">
-						Ready to <span className="text-nowrap"><Cover>move forward</Cover>?</span>
+						Ready to <span className="text-nowrap italic"><Cover>move forward</Cover>?</span>
 					</h1>
 					<div className="mt-4 z-20 flex sm:flex-row flex-col justify-evenly sm:justify-center items-center sm:gap-16 gap-8">
 						{/* <a href="mailto:michael@mngatewood.com">
