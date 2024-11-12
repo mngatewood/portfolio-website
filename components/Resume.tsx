@@ -25,40 +25,40 @@ export const Resume = () => {
 			</div>
 			<div className={`${expandResume ? 'max-h-[9999px]' : 'max-h-56 overflow-hidden bg-gradient-to-t from-slate-950'} px-4 py-8 sm:p-10 md:p-20 sm:m-5 m-0 md:m-10 bg-gray-100 text-black-100 transition-max-height duration-1000 ease-in-out`}>
 				<div className="flex md:flex-row flex-col justify-between items-center w-full mb-4 font-trebuchet">
-					<p className="text-2xl font-bold">Michael N. Gatewood</p>
+					<p className="text-2xl font-bold">Michael N. Gatewood<span className="text-0"> - </span></p>
 					<p className="text-lg">Software Engineer</p>
 				</div>
 				<div className="mt-4">
 					<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Experience</h2>
 					<div className="mb-4">
 						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Software Development Technical Lead</h3>
+							<h3>Software Development Technical Lead<span className="text-0"> - </span></h3>
 							<h3 className="md:text-right text-left">Coin Cloud, Inc.</h3>
 						</div>
 						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>August 2019 – October 2022</h3>
+							<h3>August 2019 – October 2022<span className="text-0">; </span></h3>
 							<h3 className="md:text-right text-left">Las Vegas, Nevada</h3>
 						</div>
 						<p className="text-justify"> Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver quality products on time and within scope. Worked closely with a cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.</p>
 					</div>
 					<div className="mb-4">
 						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Human Resources Manager </h3>
+							<h3>Human Resources Manager<span className="text-0"> - </span></h3>
 							<h3 className="md:text-right text-left">United States Army</h3>
 						</div>
 						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>March 2008 – November 2017</h3>
+							<h3>March 2008 – November 2017<span className="text-0">; </span></h3>
 							<h3 className="md:text-right text-left">Fort Carson, Colorado</h3>
 						</div>
 						<p className="text-justify">Trained, supervised, and mentored staff in oversight and management of postal operations and personnel accountability for the entire U.S. Central Command at Camp Arifjan, Kuwait. Provided direction and support to subordinate postal and accountability teams of more than 300 personnel and reported daily status to Brigade and Theater command staff.</p>
 					</div>
 					<div className="mb-4">
 						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Technical Consultant (Volunteer)</h3>
+							<h3>Technical Consultant (Volunteer)<span className="text-0"> - </span></h3>
 							<h3 className="md:text-right text-left">Saint Therese Center</h3>
 						</div>
 						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>February 2012 – December 2015</h3>
+							<h3>February 2012 – December 2015<span className="text-0">; </span></h3>
 							<h3 className="md:text-right text-left">Henderson, Nevada</h3>
 						</div>
 						<p className="text-justify">Developed a responsive e-commerce website for marketing campaigns and processing donations. Established, installed, and maintained an organizational standard for software, hardware and telephony, including a corporate network and server. Installed and monitored security camera system. Provided desktop support to staff and volunteers.</p>
@@ -68,11 +68,11 @@ export const Resume = () => {
 					<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Education</h2>
 					<div className="mb-4">
 						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Front-End and Back-End Engineering</h3>
+							<h3>Front-End and Back-End Engineering<span className="text-0"> - </span></h3>
 							<h3 className="md:text-right text-left">Turing School of Software and Design</h3>
 						</div>
 						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>November 2017 – February 2019</h3>
+							<h3>November 2017 – February 2019<span className="text-0">; </span></h3>
 							<h3 className="md:text-right text-left">Denver, Colorado</h3>
 						</div>
 						<p className="text-justify">Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the '14er' club by graduating from both Front-End and Back-End Engineering programs.</p>

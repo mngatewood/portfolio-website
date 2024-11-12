@@ -180,7 +180,10 @@ const config = {
 			},
 			transitionProperty: {
 				"max-height": "max-height",
-			}
+			},
+			fontSize: {
+				'0': '0rem',
+			},
 		},
 	},
 	plugins: [
