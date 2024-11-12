@@ -323,7 +323,7 @@ export const techStacks = [
 	},
 	{
 		"icon": <SiMicrosoftpowerpoint />,
-		"title": "Microsoft Powerpoint",
+		"title": "Microsoft PowerPoint",
 		"renderInToolbox": false,
 	},
 	{
