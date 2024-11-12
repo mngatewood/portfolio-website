@@ -1,7 +1,7 @@
 export const gridItems = [
 	{
 		id: "1",
-		title: "Agile problem-solver who remains composed under pressure.",
+		title: "Agile problem solver who remains composed under pressure.",
 		description: "Strong analytical skills enable rapid diagnosis and resolution of code issues while delivering precise and effective solutions.",
 		className: "lg:col-span-3 md:col-span-6 md:row-span-4",
 		imgClassName: "w-full h-full rounded-3xl",
@@ -51,7 +51,7 @@ export const gridItems = [
 	},
 	{
 		id: "6",
-		title: "Excellent verbal, written and listening skills!",
+		title: "Excellent verbal, writing, and listening skills!",
 		description: "Effective at articulating complex ideas to colleagues and clients at all levels of the organization.",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
 		imgClassName: "",
@@ -75,7 +75,7 @@ export const projects = [
 	{
 		id: "1",
 		title: "Keys & Cogs",
-		description: "A digital adaptation of the popular tabletop word-association game, So Clover!",
+		description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
 		img: "/p1.png",
 		iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha"],
 		link: "https://mngatewood-keys-cogs.meteorapp.com/",
@@ -85,7 +85,7 @@ export const projects = [
 	{
 		id: "2",
 		title: "P.I. Link",
-		description: "A companion app for the deduction and bluffing board game, Detective Club.",
+		description: "A companion app for the deduction and bluffing board game, <i>Detective Club</i>.",
 		img: "/p2.png",
 		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
 		link: "https://pi-link-web-production.up.railway.app/",
@@ -106,7 +106,7 @@ export const projects = [
 	{
 		id: "4",
 		title: "Michael N. Gatewood Portfolio",
-		description: "My official website for potential clients, employers and others to learn more about me.",
+		description: "My official website for potential clients, employers, and others to learn more about me.",
 		img: "/p4.png",
 		iconList: ["React", "Next.js", "TailwindCSS", "TypeScript"],
 		link: "https://mngatewood.com",
@@ -152,13 +152,13 @@ export const testimonials = [
 		profile: "/profile2.jpeg",
 	},
 	{
-		quote: "I had the pleasure of working alongside Micheal Gatewood, a remarkable full-stack developer and veteran who brings unparalleled dedication, technical expertise, and leadership to every project he touches.",
+		quote: "I had the pleasure of working alongside Michael Gatewood, a remarkable full-stack developer and veteran who brings unparalleled dedication, technical expertise, and leadership to every project he touches.",
 		name: "Philip Stenberg",
 		title: "Systems Services NCOIC, Nevada Army National Guard",
 		profile: "/profile3.jpeg",
 	},
 	{
-		quote: "Mr. Gatewood was ordered to full-time military duty in October of 2013, yet continued to assist the center in evenings and weekends.  He went above and beyond the highest expectations by always helping out during his free time in order to ensure that the Center continued to move forward.",
+		quote: "Mr. Gatewood was ordered to full-time military duty in October of 2013, yet continued to assist the Center in evenings and weekends.  He went above and beyond the highest expectations by always helping out during his free time in order to ensure that the Center continued to move forward.",
 		name: "Joseph I. O'Brien, O.P.",
 		title: "Executive Director, Saint Therese Center HIV Outreach",
 		profile: "/profile4.jpg",
@@ -175,7 +175,7 @@ export const experiences = [
 	{
 		id: "1",
 		title: "Software Development Technical Lead",
-		description: "Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver high quality products on-time and within scope. Worked closely with cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.",
+		description: "Led a cross-functional team to deliver integrated software solutions on time and within scope.",
 		company: "Coin Cloud Inc.",
 		companyLink: "https://coincloudatm.com/",
 		location: "Las Vegas, NV",
@@ -186,7 +186,7 @@ export const experiences = [
 	{
 		id: "2",
 		title: "Software Engineering Student",
-		description: "Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the '14er' club by graduating from both Front-End and Back-End Engineering programs.",
+		description: "Earned rare distinction as first student to graduate from both front-end and back-end engineering programs.",
 		company: "Turing School of Software and Design",
 		companyLink: "https://turing.edu/",
 		location: "Denver, CO",
@@ -197,39 +197,40 @@ export const experiences = [
 	{
 		id: "3",
 		title: "Human Resources Manager",
-		description: "Trained, supervised, and mentored staff in oversight and management of postal operations and personnel accountability for entire U.S. Central Command at Camp Arifjan, Kuwait. Provided direction and support to subordinate postal and accountability teams of more than 300 personnel and reported daily status to Brigade and Theater command staff.",
+		description: "Led and mentored large team in overseas postal operations, ensuring accountability and efficiency.",
 		company: "United States Army",
 		companyLink: "https://www.army.mil/",
 		location: "Southwest Asia & Fort Carson, CO",
 		thumbnail: "/experience3w.jpeg",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-		iconList: ["Microsoft Teams", "Microsoft Access", "Microsoft Excel", "Microsoft Powerpoint", "Microsoft Word", "Microsoft SharePoint"]
+		iconList: ["Microsoft Teams", "Microsoft Access", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Word", "Microsoft SharePoint"]
 	},
 	{
 		id: "4",
 		title: "Volunteer and Technical Consultant",
-		description: "Developed a responsive e-commerce website for marketing and processing donations. Established, installed, and maintained an organizational standard for software, hardware and telephony, including a corporate network and server. Installed and monitored security camera system. Provided desktop support to staff and volunteers.",
+		description: "Designed and implemented comprehensive IT solutions for non-profit organization.",
 		company: "Saint Therese Center",
 		companyLink: "https://www.facebook.com/STCLV18/",
 		location: "Henderson, NV",
 		thumbnail: "/experience4.png",
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-		iconList: ["HTML", "CSS", "Windows Server", "Microsoft Exchange","Microsoft Access", "Microsoft Excel", "Microsoft Powerpoint", "Microsoft Word"]
+		iconList: ["HTML", "CSS", "Windows Server", "Microsoft Exchange", "Microsoft Access", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Word"]
 	},
 ]
 
 export const alignment = [
 	{
 		id: "1",
-		title: "Why You Want to Work With Me",
+		title: "Why You Want to Work with Me",
 		list: [
-			"Proficient in a number of programming languages, frameworks, and tools",
-			"Able to solve complex problems in a timely and efficient manner",
-			"Highly experienced professional with a strong foundation in multiple disciplines",
-			"Proven track record of building successful teams and delivering quality results",
-			"Excellent communication skills with positive energy and friendly demeanor",
-			"Highly versatile and eager to contribute when and where needed",
-			"Always excited to learn new technologies and take on new challenges",
+			"Proficient in a number of programming languages, frameworks, and tools.",
+			"Able to solve complex problems in a timely and efficient manner.",
+			"Highly experienced professional with a strong foundation in multiple disciplines.",
+			"Proven track record of building successful teams and delivering quality results.",
+			"Excellent communication skills with positive energy and a friendly demeanor.",
+			"Highly versatile and eager to contribute when and where needed.",
+			"Always excited to learn new technologies and take on new challenges.",
+			"Adaptable schedule and willing to relocate or work remotely.",
 		],
 		animationSpeed: 5.1,
 		containerClassName: "bg-pink-900",
@@ -237,11 +238,11 @@ export const alignment = [
 	},
 	{
 		id: "2",
-		title: "Why I Want to Work With You",
+		title: "Why I Want to Work with You",
 		list: [
-			"Opinions from all members of the team are valued and processes are employee-driven.",
+			"Opinions from all members of the team are valued, and processes are employee-driven.",
 			"Excellence and dedication are rewarded by promoting from within the organization.",
-			"Comradery and collaboration is promoted through trust, communication and celebrating successes.",
+			"Comradery and collaboration are promoted through trust, communication, and celebrating successes.",
 			"Team members are commended and recognized for going above and beyond.",
 			"The company demonstrates commitment to its employees by prioritizing professional development.",
 			"The team exhibits a startup-like enthusiasm and is able to pivot when necessary.",
@@ -255,7 +256,7 @@ export const alignment = [
 
 export const titles = [
 	"Software Engineer",
-	"Problem-Solver",
+	"Problem Solver",
 	"Collaborator",
 	"Army Veteran",
 	"Communicator",
