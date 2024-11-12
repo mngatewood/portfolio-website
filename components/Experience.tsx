@@ -49,7 +49,7 @@ export const Experience = () => {
 									</div>
 								</div>
 							</div>
-							<p className="text-start text-white-100 md:mt-2 mt-3 font-semibold md:ms-5 md:w-1/3 lg:ms-0 lg:w-full">
+							<p className="text-start text-white-100 md:mt-0 lg:mt-2 mt-3 text-xl font-semibold md:ms-5 md:w-1/3 lg:ms-0 lg:w-full">
 								{job.description}
 							</p>
 
