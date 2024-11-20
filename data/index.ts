@@ -77,7 +77,7 @@ export const projects = [
 		title: "Keys & Cogs",
 		description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
 		img: "/p1.png",
-		iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha"],
+		iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha", "MongoDB"],
 		link: "https://mngatewood-keys-cogs.meteorapp.com/",
 		linkTitle: "mngatewood-keys-cogs.meteorapp.com",
 		repo: "https://github.com/mngatewood/keys-cogs"
@@ -97,9 +97,9 @@ export const projects = [
 		title: "My Movie Tracker",
 		description: "A React app that displays movie data and allows users to save their favorite movies.",
 		img: "/p3.png",
-		iconList: ["React", "Express"],
+		iconList: ["React", 'Node.js', "Express", "PostgreSQL"],
 		link: "https://movie-tracker2-production.up.railway.app/",
-		linkTitle: "my-movie-tracker.com",
+		linkTitle: "movie-tracker2-production.up.railway.app",
 		repo: "https://github.com/mngatewood/movie-tracker2"
 	},
 	{
