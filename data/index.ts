@@ -98,8 +98,7 @@ export const projects = [
 		description: "A React app that displays movie data and allows users to save their favorite movies.",
 		img: "/p3.png",
 		iconList: ["React", "Express"],
-		// TODO: rebuild backend, deploy, and update link
-		link: "https://www.my-movie-tracker.com/",
+		link: "https://movie-tracker2-production.up.railway.app/",
 		linkTitle: "my-movie-tracker.com",
 		repo: "https://github.com/mngatewood/movie-tracker2"
 	},
