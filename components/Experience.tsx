@@ -58,7 +58,7 @@ export const Experience = () => {
 						<div className="flex justify-between w-full mt-3">
 							<div className="flex justify-start">
 								{ job.iconList.map((icon, index) => (
-									<div key={icon} className="border border-white/[0.3] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{
+									<div key={icon} className="border border-white/[0.3] rounded-full bg-black hover:bg-purple lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{
 										transform: `translateX(-${index * 8}px)`
 									}}>
 										<ProjectIcon title={icon} />

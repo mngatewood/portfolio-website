@@ -5,6 +5,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { PiLinkedinLogo } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { FaAngleDoubleDown, FaAngleDoubleUp, FaFilePdf } from "react-icons/fa";
+import { TiPhone } from 'react-icons/ti';
 
 export const Resume = () => {
 	const [expandResume, setExpandResume] = useState(false);
@@ -25,75 +26,101 @@ export const Resume = () => {
 			</div>
 			<div className={`${expandResume ? 'max-h-[9999px]' : 'max-h-56 overflow-hidden bg-gradient-to-t from-slate-950'} px-4 py-8 sm:p-10 md:p-20 sm:m-5 m-0 md:m-10 bg-gray-100 text-black-100 transition-max-height duration-1000 ease-in-out`}>
 				<div className="flex md:flex-row flex-col justify-between items-center w-full mb-4 font-trebuchet">
-					<p className="text-2xl font-bold">Michael N. Gatewood<span className="text-0"> - </span></p>
-					<p className="text-2xl">Software Engineer</p>
+					<p className="text-2xl font-bold text-center xxs:text-left">Michael N. Gatewood<span className="text-0"> - </span></p>
+					<p className="text-2xl text-center xxs:text-left">Software Engineer</p>
 				</div>
-				<p className="text-justify">Dedicated, results-driven engineer with expertise in front-end and back-end development.  An analytical problem-solver with an emphasis on quality and a can-do attitude.  Known for accomplishing goals in a fast-paced, deadline-driven environment.</p>
+				<p className="xxs:text-justify">Dedicated, results-driven engineer with expertise in front-end and back-end development. An analytical problem-solver with an emphasis on quality and a can-do attitude. Known for accomplishing goals in a fast-paced, deadline-driven environment.</p>
 				<div className="mt-4">
-					<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Experience</h2>
+					<h2 className="mb-4 underline text-lg font-bold font-trebuchet text-center">Experience</h2>
 					<div className="mb-4">
-						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Software Development Technical Lead<span className="text-0"> - </span></h3>
-							<h3 className="md:text-right text-left">Coin Cloud, Inc.</h3>
-						</div>
-						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>August 2019 – October 2022<span className="text-0">; </span></h3>
+						<div className="flex md:flex-row flex-col justify-between">
+							<h3 className="font-bold">Coin Cloud, Inc.</h3>
 							<h3 className="md:text-right text-left">Las Vegas, Nevada</h3>
 						</div>
-						<p className="text-justify">Designed and implemented software solutions that integrated across multiple applications within a complex technology stack.  Managed a team of developers to deliver quality products on time and within scope. Worked closely with a cross-functional Product team to assess project feasibility, define technical specifications, and establish project timelines and milestones.</p>
+						<hr />
+						<div className="flex md:flex-row flex-col justify-between my-2 ml-3">
+							<h3 className="font-bold">Software Development Technical Lead<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">March 2022 - October 2022</h3>
+						</div>
+						<p className="xxs:text-justify ml-3">Designed and implemented software solutions that integrated across multiple applications within a complex technology stack, including Angular, AWS, Serverless, MongoDB and Docker. Led a team of developers to deliver quality products on time and within scope and collaborated closely with a cross-functional Product team to assess project feasibility, define technical specifications and establish project timelines and milestones that drove business success.</p>
+						<div className="flex md:flex-row flex-col justify-between my-2 ml-3">
+							<h3 className="font-bold">Software Development Manager<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">June 2020 - March 2022</h3>
+						</div>
+						<p className="xxs:text-justify ml-3">Led a team of 5-8 software engineers, providing technical leadership and guidance to ensure successful project execution and delivery of high-quality software solutions that met business objectives and increased customer satisfaction. Coordinated with stakeholders to define project requirements, developed and managed project plans and ensured timely delivery of high-quality software solutions that drove business growth and customer engagement.</p>
+						<div className="flex md:flex-row flex-col justify-between my-2 ml-3">
+							<h3 className="font-bold">Senior Software Engineer<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">February 2020 - June 2020</h3>
+						</div>
+						<p className="xxs:text-justify ml-3">Championed the development of complex software projects, providing technical guidance and oversight to junior engineers and collaborating with cross-functional teams to drive project success. Leveraged expertise in software design, development and testing to deliver high-quality solutions that met business objectives and exceeded customer expectations.</p>
+						<div className="flex md:flex-row flex-col justify-between my-2 ml-3">
+							<h3 className="font-bold">Junior Full Stack Engineer<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">August 2019 - February 2020</h3>
+						</div>
+						<p className="xxs:text-justify ml-3">Boosted company productivity by designing and deploying custom features for in-house enterprise software, leveraging Meteor, MongoDB, CoffeeScript and Jade/Pug. Crafted sophisticated data aggregations to ensure seamless performance and scalability and designed intuitive, reactive interfaces that transformed the user experience and empowered users to excel in their roles.</p>
 					</div>
 					<div className="mb-4">
-						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Human Resources Manager<span className="text-0"> - </span></h3>
-							<h3 className="md:text-right text-left">United States Army</h3>
-						</div>
-						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>March 2008 – November 2017<span className="text-0">; </span></h3>
+						<div className="flex md:flex-row flex-col justify-between">
+							<h3 className="font-bold">United States Army</h3>
 							<h3 className="md:text-right text-left">Fort Carson, Colorado</h3>
 						</div>
-						<p className="text-justify">Trained, supervised, and mentored staff in oversight and management of postal operations and personnel accountability for the entire U.S. Central Command at Camp Arifjan, Kuwait. Provided direction and support to subordinate postal and accountability teams of more than 300 personnel and reported daily status to Brigade and Theater command staff.</p>
-					</div>
-					<div className="mb-4">
-						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Technical Consultant (Volunteer)<span className="text-0"> - </span></h3>
-							<h3 className="md:text-right text-left">Saint Therese Center</h3>
+						<hr />
+						<div className="flex md:flex-row flex-col justify-between my-2 ml-3">
+							<h3 className="font-bold">Human Resources Manager<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">March 2008 – November 2017</h3>
 						</div>
-						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>February 2012 – December 2015<span className="text-0">; </span></h3>
-							<h3 className="md:text-right text-left">Henderson, Nevada</h3>
-						</div>
-						<p className="text-justify">Developed a responsive e-commerce website for marketing campaigns and processing donations. Established, installed, and maintained an organizational standard for software, hardware and telephony, including a corporate network and server. Installed and monitored security camera system. Provided desktop support to staff and volunteers.</p>
+						<p className="xxs:text-justify ml-3">Trained, supervised, and mentored staff in oversight and management of postal operations and personnel accountability for the entire U.S. Central Command at Camp Arifjan, Kuwait. Provided direction and support to subordinate postal and accountability teams of more than 300 personnel and reported daily status to Brigade and Theater command staff.</p>
 					</div>
 				</div>
 				<div className="mt-4">
-					<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Education</h2>
+					<h2 className="mb-4 underline text-lg font-bold font-trebuchet text-center">Education</h2>
 					<div className="mb-4">
-						<div className="flex md:flex-row flex-col justify-between font-bold">
-							<h3>Front-End and Back-End Engineering<span className="text-0"> - </span></h3>
-							<h3 className="md:text-right text-left">Turing School of Software and Design</h3>
-						</div>
-						<div className="flex md:flex-row flex-col-reverse justify-between mb-4">
-							<h3>November 2017 – February 2019<span className="text-0">; </span></h3>
+						<div className="flex md:flex-row flex-col justify-between">
+							<h3 className="font-bold">Turing School of Software and Design</h3>
 							<h3 className="md:text-right text-left">Denver, Colorado</h3>
 						</div>
-						<p className="text-justify">Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the &apos;14er&apos; club by graduating from both Front-End and Back-End Engineering programs.</p>
+						<hr />
+						<div className="flex md:flex-row flex-col justify-between mt-2 ml-3">
+							<h3 className="font-bold">Front-End Engineering<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">November 2017 – August 2018</h3>
+						</div>
+						<div className="flex md:flex-row flex-col justify-between mb-2 ml-3">
+							<h3 className="font-bold">Back-End Engineering<span className="text-0"> - </span></h3>
+							<h3 className="md:text-right text-left">August 2018 – February 2019</h3>
+						</div>
+						<p className="xxs:text-justify ml-3">Applied fundamental software engineering principles and best practices in an intense course of study spanning more than fourteen months.  First student ever to be inducted into the &apos;14er&apos; club by graduating from both Front-End and Back-End Engineering programs.</p>
 					</div>
 				</div>
 				<div className="mt-4">
 					<div className="flex lg:flex-row flex-col justify-between text-xs md:text-sm min-[790px]:text-base lg:text-sm xl:text-lg">
 						<div className="lg:w-2/3 w-full mb-4 lg:mb-0">
-							<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Technical Skills</h2>
-							<ul>
-								<li className="text-justify xs:hidden">TypeScript | JavaScript | React | Next | Svelte | Meteor | Angular | Node | Express | Knex | Firebase | Mocha | Chai | Jest | Playwright | MongoDB | SQL | PostgreSQL | MySQL | GraphQL | Docker | AWS | Ruby on Rails | Sinatra | Postman | Git | GitHub | Jira | Confluence</li>
-								<li className="[text-align-last:justify] hidden xs:block">TypeScript | JavaScript | React | Next | Svelte | Meteor | Angular</li>
-								<li className="[text-align-last:justify] hidden xs:block">Node | Express | Knex | Firebase | Mocha | Chai | Jest | Playwright</li>
-								<li className="[text-align-last:justify] hidden xs:block">MongoDB | SQL | PostgreSQL | MySQL | GraphQL | Docker | AWS</li>
-								<li className="[text-align-last:justify] hidden xs:block">Ruby on Rails | Sinatra | Postman | Git | Github | Jira | Confluence</li>
-							</ul>
+							<h2 className="mb-4 underline text-lg font-bold font-trebuchet text-center">Technical Skills</h2>
+							<div className="flex flex-col w-full">
+								<div className="flex w-full mb-2 xl:mb-3 mt-1">
+									<h3 className="font-bold shrink-0 flex items-center w-20 md:w-24 lg:w-20 xl:w-28">Fluent:</h3>
+									<p className="lg:min-w-[412px]">JavaScript, React, Next, Svelte, Meteor, MongoDB, Git, GitHub</p>
+								</div>
+								<div className="flex w-full mb-2 xl:mb-3">
+									<h3 className="font-bold shrink-0 flex items-center w-20 md:w-24 lg:w-20 xl:w-28">Proficient:</h3>
+									<p className="lg:min-w-[412px]">TypeScript, Node, Express, Mocha, Chai, Ruby on Rails, Sinatra, Postman, PostgreSQL, MySQL, Playwright, Jira, Confluence</p>
+								</div>
+								<div className="flex w-full mb-2 xl:mb-3">
+									<h3 className="font-bold shrink-0 flex items-center w-20 md:w-24 lg:w-20 xl:w-28">Familiar:</h3>
+									<p className="lg:min-w-[412px]">Angular, SQL, GraphQL, Docker, AWS, Knex, Firebase, Jest</p>
+								</div>
+							</div>
 						</div>
 						<div className="lg:w-auto w-full">
-							<h2 className="mb-4 underline text-lg font-bold font-trebuchet">Contact</h2>
-							<ul>
+							<h2 className="mb-4 underline text-lg font-bold font-trebuchet text-center">Contact</h2>
+							<ul className="w-[185px] md:w-[230px] m-auto lg:w-auto">
+								<li className="flex justify-start items-center gap-2">
+									<div className="scale-x-[-1]">
+										<TiPhone />
+									</div>
+									<p>
+										(702) 728-1848
+									</p>
+								</li>
 								<li className="flex justify-start items-center gap-2">
 									<div>
 										<PiGlobeSimple />
