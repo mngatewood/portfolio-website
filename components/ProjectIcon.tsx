@@ -6,6 +6,8 @@ import { IconContext } from "react-icons";
 export const ProjectIcon = ({title}: {title: string}) => {
 
 	const [iconElement, setIconElement] = useState<React.JSX.Element | null>(null);
+	const [isHovered, setIsHovered] = useState(false);
+	const color = isHovered ? "#000000" : "#38BDF8";
 
 	useEffect(() => {
 		const icon = techStacks.find((tech) => tech.title === title);
@@ -13,8 +15,8 @@ export const ProjectIcon = ({title}: {title: string}) => {
 	}, [title]);
 
 	return (
-		<IconContext.Provider value={{ color: '#38BDF8', size: "1.5rem" }} >
-			<div className="group">
+		<IconContext.Provider value={{ color: color, size: "1.5rem" }} >
+			<div className="group" onMouseOver={() => setIsHovered(true)} onMouseOut={() => setIsHovered(false)}>
 				{iconElement}
 				<div className='absolute -top-16 px-4 py-2 bg-black-100 rounded-md text-purple border-gray-500 border left-0 text-lg opacity-0 group-hover:opacity-100 transition-all duration-200 transform scale-0 group-hover:scale-100'>
 					<span className="whitespace-nowrap">{title}</span>

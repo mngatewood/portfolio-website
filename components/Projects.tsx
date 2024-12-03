@@ -47,7 +47,7 @@ export const Projects = () => {
 						<div className="relative top-0 xxs:-top-0 md:-top-0 lg:top-16 42xl:top-48 flex items-center justify-between md:max-w-[570px] lg:w-[40vw] w-[80vw] mt-7 mb-3 z-40">
 							<div className="flex items-center">
 								{iconList.map((icon, index) => (
-									<div key={icon} className="border border-white/[0.3] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{
+									<div key={icon} className="border border-white/[0.3] rounded-full bg-black hover:bg-purple lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{
 										transform: `translateX(-${index * 8}px)`
 									}}>
 										<ProjectIcon title={icon} />
