@@ -102,7 +102,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h2>Acknowledgements</h2>
+<h2 id="acknowledgments">Acknowledgments</h2>
 
 <ul>
 	<li>Design inspired by <a href="https://github.com/adrianhajdin/">Adrian Hajdin's</a> <a href="https://github.com/adrianhajdin/portfolio">portfolio project.</a></li>
