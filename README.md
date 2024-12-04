@@ -40,7 +40,7 @@
 	<li><a href="https://www.mngatewood.com/#experience">Professional Experience</a></li>
 	<li><a href="https://www.mngatewood.com/#resume">Résumé</a></li>
 	<li><a href="https://www.mngatewood.com/#alignment">Cultural Alignment</a></li>
-	<li><a href="https://www.mngatewood.com/#contact">Contact</a></li>
+	<li><a href="https://www.mngatewood.com/#footer">Contact</a></li>
 </ul>
 
 <h3 id="powered-by">Powered By</h3>
