@@ -105,7 +105,7 @@
 <h2 id="acknowledgments">Acknowledgments</h2>
 
 <ul>
-	<li>Design inspired by <a href="https://github.com/adrianhajdin/">Adrian Hajdin's</a> <a href="https://github.com/adrianhajdin/portfolio">portfolio project.</a></li>
+	<li>Design inspired by <a href="https://github.com/adrianhajdin/">Adrian Hajdin's</a> <a href="https://github.com/adrianhajdin/portfolio">portfolio project</a>.</li>
 	<li>UI Components from <a href="https://ui.aceternity.com/">Aceternity UI</a>.</li>
 	<li>Calendar/meeting uses <a href="https://calendly.com/">Calendly</a>.</li>
 </ul>
