@@ -30,7 +30,6 @@
 
 <img src="https://www.mngatewood.com/screenshot-portfolio-website-hires.png" alt="project screenshot">
 <br>
-<br>
 
 <p>This web portfolio is a place where others can go to learn more about my background, skills, projects and interests.  It includes the following sections:</p>
 
