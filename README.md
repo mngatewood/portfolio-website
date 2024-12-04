@@ -9,7 +9,7 @@
 	&nbsp;&nbsp;|&nbsp;&nbsp;
 	<a href="https://github.com/mngatewood/portfolio-website/issues/new?labels=bug">Report a Bug</a>
 	&nbsp;&nbsp;|&nbsp;&nbsp;
-	<a href="https://github.com/mngatewood/portfolio-website/issues/new?labels=feature">Request a Feature</a>
+	<a href="https://github.com/mngatewood/portfolio-website/issues/new?labels=enhancement">Request a Feature</a>
 </div>
 <br>
 
@@ -81,13 +81,13 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h3>License</h3>
+<h3 id="license">License</h3>
 
 <p>Distributed under the MIT License. See <a href="https://github.com/mngatewood/portfolio-website/blob/main/license.txt"><code>LICENSE.txt</code></a> for more information.</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 
 <div align="center">
 	<a href="https://www.mngatewood.com">Website</a>
