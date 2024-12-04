@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<a id="top"></a>
 
-## Getting Started
+<!-- Project Overview -->
+<h1>Michael N. Gatewood Portfolio</h1>
+<p>A web portfolio designed to showcase information about my skills, interests and projects.</p>
 
-First, run the development server:
+<div align="center">
+	<a href="https://www.mngatewood.com">View Live</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="https://github.com/mngatewood/portfolio-website/issues/new?labels=bug">Report a Bug</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="https://github.com/mngatewood/portfolio-website/issues/new?labels=feature">Request a Feature</a>
+</div>
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<!-- Table of Contents -->
+<details>
+	<summary>Table of Contents</summary>
+	<ol>
+		<li><a href="#about">About the Project</a></li>
+		<li><a href="#getting-started">Getting Started</a></li>
+		<li><a href="#license">License</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#acknowledgments">Acknowledgments</a></li>
+	</ol>
+</details>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- About -->
+<h2 id="about">About the Project</h2>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img src="https://www.mngatewood.com/screenshot-portfolio-website-hires.png" alt="project screenshot">
+<br>
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p>This web portfolio is a place where others can go to learn more about my background, skills, projects and interests.  It includes the following sections:</p>
 
-## Learn More
+<ul>
+	<li><a href="https://www.mngatewood.com/#about">About</a></li>
+	<li><a href="https://www.mngatewood.com/#projects">Project Spotlight</a></li>
+	<li><a href="https://www.mngatewood.com/#testimonials">Testimonials</a></li>
+	<li><a href="https://www.mngatewood.com/#experience">Professional Experience</a></li>
+	<li><a href="https://www.mngatewood.com/#resume">Résumé</a></li>
+	<li><a href="https://www.mngatewood.com/#alignment">Cultural Alignment</a></li>
+	<li><a href="https://www.mngatewood.com/#contact">Contact</a></li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+<h3 id="powered-by">Powered By</h3>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<div align="center">
+	<img src="https://img.shields.io/badge/next.js-black?style=for-the-badge&logo=nextdotjs" />
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="https://img.shields.io/badge/tailwind_css-black?style=for-the-badge&logo=tailwindcss" />
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<img src="https://img.shields.io/badge/framer_motion-black?style=for-the-badge&logo=framer" />
+</div>
+<br>
+<p>This is a <a href="https://nextjs.org">Next.js</a> project bootstrapped with <a href="https://nextjs.org/docs/app/api-reference/cli/create-next-app"><code>create-next-app</code></a>.</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Deploy on Vercel
+<!-- Getting Started -->
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+	<li>
+		<p>
+			<a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clone this repository.</a>
+		</p>
+		<pre><code>git clone https://github.com/mngatewood/portfolio-website.git</code></pre>
+	</li>
+	<li>
+		<p>Install dependencies.</p>
+		<pre><code>npm install</code></pre>
+	</li>
+	<li>
+		<p>Run the development server</p>
+		<pre><code>npm run dev</code></pre>
+	</li>
+	<li>
+		<p>Open <a href="http://localhost:3000">http://localhost:3000</a> with your browser to see the result.</p>
+	</li>
+</ol>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h3>License</h3>
+
+<p>Distributed under the MIT License. See <a href="https://github.com/mngatewood/portfolio-website/blob/main/license.txt"><code>LICENSE.txt</code></a> for more information.</p>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<h2>Contact</h2>
+
+<div align="center">
+	<a href="https://www.mngatewood.com">Website</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="mailto:michael@mngatewood.com">Email</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="https://www.linkedin.com/in/mngatewood/">LinkedIn</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="https://github.com/mngatewood">GitHub</a>
+</div>
+<br>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<h2>Acknowledgements</h2>
+
+<ul>
+	<li>Design inspired by <a href="https://github.com/adrianhajdin/">Adrian Hajdin's</a> <a href="https://github.com/adrianhajdin/portfolio">portfolio project.</a></li>
+	<li>UI Components from <a href="https://ui.aceternity.com/">Aceternity UI</a>.</li>
+	<li>Calendar/meeting uses <a href="https://calendly.com/">Calendly</a>.</li>
+</ul>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
