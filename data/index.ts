@@ -112,6 +112,66 @@ export const projects = [
 		linkTitle: "mngatewood.com",
 		repo: "https://github.com/mngatewood/portfolio-website"
 	},
+	{
+		id: "5",
+		title: "Gloomhaven Deck Builder",
+		description: "A deck-builder for the role-playing board game, <i>Gloomhaven</i>.",
+		img: "/p-gloomhaven.png",
+		iconList: ["React", "Redux", "Express", "Firebase", "PostgreSQL"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/mngatewood/gh-deckbuilder"
+	},
+{
+		id: "6",
+		title: "Trigger",
+		description: "An app that relates ailments to their potential causes based on your personal habits.",
+		img: "/p-trigger.png",
+		iconList: ["React", "Redux"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/Diazblack/trigger"
+	},
+	{
+		id: "7",
+		title: "Bar Builder",
+		description: "Cocktail recipes that you can make with the ingredients you have at home.",
+		img: "/p-barbuilder.png",
+		iconList: ["React", "Redux"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/mngatewood/bar-builder"
+	},
+	{
+		id: "8",
+		title: "Book Club",
+		description: "A sortable collection of books, authors and reviews.",
+		img: "/p-bookclub.png",
+		iconList: ["Ruby on Rails", "PostgreSQL"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/mngatewood/book_club"
+	},
+	{
+		id: "9",
+		title: "Pitcher",
+		description: "Choose a nearby restaurant based on your first impression of food images.",
+		img: "/p-pitcher.png",
+		iconList: ["Ruby on Rails", "PostgreSQL"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/Kate-v2/Pitcher"
+	},
+	{
+		id: "10",
+		title: "Tron Legacy",
+		description: "An adaptation of the classic video game, <i>Tron</i>.",
+		img: "/p-tron.png",
+		iconList: ["Webpack", "Mocha"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/mngatewood/book_club"
+	},
 ]
 
 export const navItems = [
