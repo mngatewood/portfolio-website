@@ -107,7 +107,7 @@ export const PinPerspective = ({
 }) => {
 	return (
 		<motion.div className="w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
-			<div className=" w-full h-full -mt-7 flex-none  inset-0" style={{ visibility: isHovering ? "visible" : "hidden" }}>
+			<div className=" w-full h-full -mt-7 flex-none inset-0" style={{ visibility: isHovering ? "visible" : "hidden" }}>
 				{/* Make this div hidden when hovered = false */}
 				<div className="absolute top-0 inset-x-0 flex justify-center">
 					<a
