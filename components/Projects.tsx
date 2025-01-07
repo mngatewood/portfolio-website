@@ -1,19 +1,31 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { projects } from '@/data';
 import { ProjectIcon } from './ProjectIcon';
 import { FaGithub } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 
 const PinContainer = dynamic(() => import('./ui/PinContainer').then(module => module.PinContainer), { ssr: false });
 
 export const Projects = () => {
+
+	const [expandProjects, setExpandProjects] = useState(false);
+
+	const toggleExpand = () => {
+		const element = document.getElementById('projects');
+		if (element && expandProjects) {
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+		setExpandProjects(!expandProjects);
+	};
+
 	return (
 		<section id="projects">
 			<h1 className="heading py-12">Project Spotlight</h1>
-			<div className="flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4">
+			<div className={`${expandProjects ? 'max-h-[9999px]' : 'max-h-[1150px] overflow-hidden bg-gradient-to-t from-slate-950'} flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4`}>
 				{ projects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
 					<div key={id} className="lg:h-[32rem] 4xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center">
 						{
@@ -106,6 +118,12 @@ export const Projects = () => {
 						</div>
 					</div>
 				))}
+			</div>
+			<div onClick={toggleExpand} className="w-full relative -top-4 sm:-top-6 md:-top-10 cursor-pointer">
+				<hr className="my-4 border-2 border-gray-400 rounded-md" />
+				<div className="w-12 h-12 mx-auto flex justify-center items-center border border-gray-400 bg-black-100 rounded-full text-4xl relative -top-10">
+					{expandProjects ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}
+				</div>
 			</div>
 		</ section>
 	)
