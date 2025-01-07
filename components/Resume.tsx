@@ -6,9 +6,12 @@ import { PiLinkedinLogo } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { FaAngleDoubleDown, FaAngleDoubleUp, FaFilePdf } from "react-icons/fa";
 import { TiPhone } from 'react-icons/ti';
+import { IconContext } from 'react-icons';
 
 export const Resume = () => {
 	const [expandResume, setExpandResume] = useState(false);
+	const [isHovered, setIsHovered] = useState(false);
+	const color = isHovered ? "#000000" : "#38BDF8";
 
 	const toggleExpand = () => {
 		const element = document.getElementById('resume');
@@ -158,10 +161,23 @@ export const Resume = () => {
 					</div>
 				</div>
 			</div>
-			<div onClick={toggleExpand}className="w-full relative -top-4 sm:-top-6 md:-top-10 cursor-pointer">
-				<hr className="my-4 border-2 border-gray-400 rounded-md" />
-				<div className="w-12 h-12 mx-auto flex justify-center items-center border border-gray-400 bg-black-100 rounded-full text-4xl relative -top-10">
-					{ expandResume ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}
+			<div onClick={toggleExpand} className="w-full relative -top-4 sm:-top-6 md:-top-10 cursor-pointer">
+				<hr className="my-4 border-2 border-purple rounded-md" />
+				<div 
+					onMouseOver={() => setIsHovered(true)}
+					onMouseOut={() => setIsHovered(false)}
+					onClick={() => setIsHovered(false)}
+					className="w-12 h-12 mx-auto flex justify-center items-center border border-purple bg-black-100 hover:bg-purple rounded-full text-4xl relative -top-10"
+				>
+					<IconContext.Provider value={{ color: color, size: "1.5rem" }} >
+						{ expandResume ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}
+					</IconContext.Provider>
+				</div>
+				<div
+					className="text-center -mt-8 w-full text-purple transition duration-200"
+					style={{ opacity: isHovered ? 1 : 0 }}
+				>
+					{expandResume ? "See Less" : "See More"}
 				</div>
 			</div>
 		</section>
