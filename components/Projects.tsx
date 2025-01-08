@@ -27,7 +27,7 @@ export const Projects = () => {
 	return (
 		<section id="projects">
 			<h1 className="heading py-12">Project Spotlight</h1>
-			<div className={`${expandProjects ? 'max-h-[9999px]' : 'max-h-[1150px] overflow-hidden bg-gradient-to-t from-slate-950'} flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4`}>
+			<div className={`${expandProjects ? 'max-h-[9999px]' : 'max-h-[1600px] md:max-h-[1700px] lg:max-h-[1140px] overflow-hidden bg-gradient-to-t from-slate-950'} flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4`}>
 				{ projects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
 					<div key={id} className="lg:h-[32rem] 4xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center">
 						{
@@ -121,7 +121,7 @@ export const Projects = () => {
 					</div>
 				))}
 			</div>
-			<div onClick={toggleExpand} className="w-full relative -top-4 sm:-top-6 md:-top-10 cursor-pointer">
+			<div onClick={toggleExpand} className="w-full relative -top-4 sm:-top-6 md:-top-10 z-[100] bg-black-100 cursor-pointer">
 				<hr className="my-4 border-2 border-purple rounded-md" />
 				<div 
 					onMouseOver={() => setIsHovered(true)} 
