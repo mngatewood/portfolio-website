@@ -1,6 +1,11 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+	experimental: {
+		instrumentationHook: true
+	},
+	reactStrictMode: true
+};
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
