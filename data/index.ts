@@ -74,86 +74,16 @@ export const gridItems = [
 export const projects = [
 	{
 		id: "1",
-		title: "Keys & Cogs",
-		description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
-		img: "/p1.png",
-		iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha", "MongoDB"],
-		link: "https://mngatewood-keys-cogs.meteorapp.com/",
-		linkTitle: "mngatewood-keys-cogs.meteorapp.com",
-		repo: "https://github.com/mngatewood/keys-cogs"
-	},
-	{
-		id: "2",
-		title: "P.I. Link",
-		description: "A companion app for the deduction and bluffing board game, <i>Detective Club</i>.",
-		img: "/p2.png",
-		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
-		link: "https://pi-link-web-production.up.railway.app/",
-		linkTitle: "pi-link-web-production.up.railway.app",
-		repo: "https://github.com/mngatewood/pi-link-web"
-	},
-	{
-		id: "3",
-		title: "My Movie Tracker",
-		description: "A React app that displays movie data and allows users to save their favorite movies.",
-		img: "/p3.png",
-		iconList: ["React", 'Node.js', "Express", "PostgreSQL"],
-		link: "https://movie-tracker2-production.up.railway.app/",
-		linkTitle: "movie-tracker2-production.up.railway.app",
-		repo: "https://github.com/mngatewood/movie-tracker2"
-	},
-	{
-		id: "4",
-		title: "Michael N. Gatewood Portfolio",
-		description: "My official website for potential clients, employers, and others to learn more about me.",
-		img: "/p4.png",
-		iconList: ["React", "Next.js", "TailwindCSS", "TypeScript"],
-		link: "https://mngatewood.com",
-		linkTitle: "mngatewood.com",
-		repo: "https://github.com/mngatewood/portfolio-website"
-	},
-	{
-		id: "5",
-		title: "Gloomhaven Deck Builder",
-		description: "A deck-builder for the role-playing board game, <i>Gloomhaven</i>.",
-		img: "/p-gloomhaven.png",
-		iconList: ["React", "Redux", "Express", "Firebase", "PostgreSQL"],
-		link: "",
-		linkTitle: "",
-		repo: "https://github.com/mngatewood/gh-deckbuilder"
-	},
-{
-		id: "6",
-		title: "Trigger",
-		description: "An app that relates ailments to their potential causes based on your personal habits.",
-		img: "/p-trigger.png",
-		iconList: ["React", "Redux"],
-		link: "",
-		linkTitle: "",
-		repo: "https://github.com/Diazblack/trigger"
-	},
-	{
-		id: "7",
-		title: "Bar Builder",
-		description: "Cocktail recipes that you can make with the ingredients you have at home.",
-		img: "/p-barbuilder.png",
-		iconList: ["React", "Redux"],
-		link: "",
-		linkTitle: "",
-		repo: "https://github.com/mngatewood/bar-builder"
-	},
-	{
-		id: "8",
-		title: "Book Club",
-		description: "A sortable collection of books, authors and reviews.",
-		img: "/p-bookclub.png",
-		iconList: ["Ruby on Rails", "PostgreSQL"],
+		title: "Tron Legacy",
+		description: "An adaptation of the classic video game, <i>Tron</i>.",
+		img: "/p-tron.png",
+		iconList: ["Webpack", "Mocha"],
 		link: "",
 		linkTitle: "",
 		repo: "https://github.com/mngatewood/book_club"
 	},
 	{
-		id: "9",
+		id: "2",
 		title: "Pitcher",
 		description: "Choose a nearby restaurant based on your first impression of food images.",
 		img: "/p-pitcher.png",
@@ -163,14 +93,94 @@ export const projects = [
 		repo: "https://github.com/Kate-v2/Pitcher"
 	},
 	{
-		id: "10",
-		title: "Tron Legacy",
-		description: "An adaptation of the classic video game, <i>Tron</i>.",
-		img: "/p-tron.png",
-		iconList: ["Webpack", "Mocha"],
+		id: "3",
+		title: "Book Club",
+		description: "A sortable collection of books, authors and reviews.",
+		img: "/p-bookclub.png",
+		iconList: ["Ruby on Rails", "PostgreSQL"],
 		link: "",
 		linkTitle: "",
 		repo: "https://github.com/mngatewood/book_club"
+	},
+	{
+		id: "4",
+		title: "Bar Builder",
+		description: "Cocktail recipes that you can make with the ingredients you have at home.",
+		img: "/p-barbuilder.png",
+		iconList: ["React", "Redux"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/mngatewood/bar-builder"
+	},
+{
+		id: "5",
+		title: "Trigger",
+		description: "An app that relates ailments to their potential causes based on your personal habits.",
+		img: "/p-trigger.png",
+		iconList: ["React", "Redux"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/Diazblack/trigger"
+	},
+	{
+		id: "6",
+		title: "Gloomhaven Deck Builder",
+		description: "A deck-builder for the role-playing board game, <i>Gloomhaven</i>.",
+		img: "/p-gloomhaven.png",
+		iconList: ["React", "Redux", "Express", "Firebase", "PostgreSQL"],
+		link: "",
+		linkTitle: "",
+		repo: "https://github.com/mngatewood/gh-deckbuilder"
+	},
+	{
+		id: "7",
+		title: "Michael N. Gatewood Portfolio",
+		description: "My official website for potential clients, employers, and others to learn more about me.",
+		img: "/p4.png",
+		iconList: ["React", "Next.js", "TailwindCSS", "TypeScript"],
+		link: "https://mngatewood.com",
+		linkTitle: "mngatewood.com",
+		repo: "https://github.com/mngatewood/portfolio-website"
+	},
+	{
+		id: "8",
+		title: "My Movie Tracker",
+		description: "A React app that displays movie data and allows users to save their favorite movies.",
+		img: "/p3.png",
+		iconList: ["React", 'Node.js', "Express", "PostgreSQL"],
+		link: "https://movie-tracker2-production.up.railway.app/",
+		linkTitle: "movie-tracker2-production.up.railway.app",
+		repo: "https://github.com/mngatewood/movie-tracker2"
+	},
+	{
+		id: "9",
+		title: "P.I. Link",
+		description: "A companion app for the deduction and bluffing board game, <i>Detective Club</i>.",
+		img: "/p2.png",
+		iconList: ["Svelte", "TypeScript", "TailwindCSS", "Pocketbase", "Playwright", "Docker"],
+		link: "https://pi-link-web-production.up.railway.app/",
+		linkTitle: "pi-link-web-production.up.railway.app",
+		repo: "https://github.com/mngatewood/pi-link-web"
+	},
+	// {
+	// 	id: "10",
+	// 	title: "Keys & Cogs",
+	// 	description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
+	// 	img: "/p1.png",
+	// 	iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha", "MongoDB"],
+	// 	link: "https://mngatewood-keys-cogs.meteorapp.com/",
+	// 	linkTitle: "mngatewood-keys-cogs.meteorapp.com",
+	// 	repo: "https://github.com/mngatewood/keys-cogs"
+	// },
+	{
+		id: "11",
+		title: "Onitama",
+		description: "A fast-paced strategy game where players use shifting moves to outmaneuver rivals.",
+		img: "/p-onitama.png",
+		iconList: ["React", "Next.js", "PostgreSQL", "TypeScript", "TailwindCSS", "Docker", "Prisma", "Playwright", "Socket.io"],
+		link: "https://onitama-production.up.railway.app/",
+		linkTitle: "onitama-production.up.railway.app",
+		repo: "https://github.com/mngatewood/onitama"
 	},
 ]
 
