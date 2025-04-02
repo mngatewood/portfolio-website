@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { projects } from '@/data';
 import { ProjectIcon } from './ProjectIcon';
+import { Project } from '@/types/types';
 import { FaGithub } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
@@ -17,7 +18,7 @@ export const Projects = () => {
 	const color = isHovered ? "#000000" : "#38BDF8";
 
 	const sortedProjects = useMemo(() => {
-		return [...projects].sort((a, b) => b.id - a.id);
+		return [...projects].sort((a: Project, b: Project) => Number(b.id) - Number(a.id));
 	}, []);
 	
 	const toggleExpand = () => {

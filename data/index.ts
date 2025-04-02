@@ -1,3 +1,5 @@
+import { Project } from "@/types/types";
+
 export const gridItems = [
 	{
 		id: "1",
@@ -71,7 +73,7 @@ export const gridItems = [
 	},
 ];
 
-export const projects = [
+export const projects: Project[] = [
 	{
 		id: "1",
 		title: "Tron Legacy",

@@ -1,13 +1,13 @@
 "use client"
 import { useEffect, useState } from 'react';
 
-export const Meteors = () => {
+export const Meteors = ({ number = 20 }: { number?: number }) => {
 	const [mounted, setMounted] = useState(false);
 	const [meteorStyles, setMeteorStyles] = useState<Array<{ top: number, left: number, delay: number, duration: number }>>([]);
 
   useEffect(() => {
 	// Generate meteor styles only after mounting
-	const styles = Array.from({ length: 20 }, () => ({
+	const styles = Array.from({ length: number }, () => ({
 		top: -Math.floor(Math.random() * 200),
 		left: 0,
 		delay: Math.random(),
@@ -15,7 +15,7 @@ export const Meteors = () => {
 	}));
 	setMeteorStyles(styles);
 	setMounted(true);
-  }, []);
+  }, [number]);
 
   // Don't render anything on server-side
   if (!mounted) {
