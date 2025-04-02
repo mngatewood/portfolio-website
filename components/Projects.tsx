@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react'; 
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { projects } from '@/data';
@@ -16,6 +16,10 @@ export const Projects = () => {
 	const [isHovered, setIsHovered] = useState(false);
 	const color = isHovered ? "#000000" : "#38BDF8";
 
+	const sortedProjects = useMemo(() => {
+		return [...projects].sort((a, b) => Number(b.id) - Number(a.id));
+	}, []);
+
 	const toggleExpand = () => {
 		const element = document.getElementById('projects');
 		if (element && expandProjects) {
@@ -28,7 +32,7 @@ export const Projects = () => {
 		<section id="projects">
 			<h1 className="heading py-12">Project Spotlight</h1>
 			<div className={`${expandProjects ? 'max-h-[9999px]' : 'max-h-[1600px] md:max-h-[1700px] lg:max-h-[1140px] overflow-hidden bg-gradient-to-t from-slate-950'} flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4`}>
-				{ projects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
+				{sortedProjects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
 					<div key={id} className="lg:h-[32rem] 4xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center">
 						{
 							linkTitle && link
@@ -112,7 +116,7 @@ export const Projects = () => {
 								<a href={repo} target="_blank" className="group">
 									<button className="flex justify-center items-center px-3 py-2 rounded-md font-bold transition duration-200 bg-black-100 text-purple group-hover:bg-purple group-hover:text-black-100 group-hover:border-teal-500 border border-white/[0.3]">
 											<FaGithub className="rounded-full" />
-											<p className="flex lg:text-lg md:text-xs text-sm ml-2">Repository</p>
+											<p className="hidden xs:flex lg:text-lg md:text-xs text-sm ml-2">Repository</p>
 											{/* <FaLocationArrow className="ms-3"  /> */}
 									</button>
 								</a>
