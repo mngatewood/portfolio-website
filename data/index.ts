@@ -177,7 +177,7 @@ export const projects = [
 		title: "Onitama",
 		description: "A fast-paced strategy game where players use shifting moves to outmaneuver rivals.",
 		img: "/p-onitama.png",
-		iconList: ["React", "Next.js", "PostgreSQL", "TypeScript", "TailwindCSS", "Docker", "Prisma", "Playwright", "Socket.io"],
+		iconList: ["Next.js", "PostgreSQL", "TypeScript", "Docker", "Playwright", "Socket.io"],
 		link: "https://onitama-production.up.railway.app/",
 		linkTitle: "onitama-production.up.railway.app",
 		repo: "https://github.com/mngatewood/onitama"
