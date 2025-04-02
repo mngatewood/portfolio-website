@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/nextjs';
 import type { BrowserOptions, ErrorEvent } from '@sentry/nextjs';
 
-const SENTRY_DSN = process.env.NEXT_PUBLIC_SENTRY_DSN;
+const SENTRY_DSN = "https://a4944fe5d7c7e13a93d5e0e10f0f05be@o4508650504781824.ingest.us.sentry.io/4508650506944512";
 
 let isInitialized = false;
 
