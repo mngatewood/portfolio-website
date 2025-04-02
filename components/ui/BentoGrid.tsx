@@ -3,7 +3,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { TbBrandReact, TbBrandNextjs, TbBrandTailwind, TbBrandTypescript, TbBrandNodejs, TbBrandDocker, TbBrandSvelte, TbBrandFirebase, TbBrandGit, TbBrandGithub, TbBrandPrisma } from "react-icons/tb";
-import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha, SiJira, SiRubyonrails, SiRubysinatra, SiJquery, SiChai, SiGraphql, SiMicrosoftsharepoint, SiMicrosoftword, SiMicrosoftpowerpoint, SiMicrosoftaccess, SiMicrosoftteams, SiMicrosoftexcel, SiWindows, SiMicrosoftexchange, SiCss3, SiHtml5, SiRedux, SiWebpack, SiSocketdotio } from "react-icons/si";
+import { SiExpress, SiMeteor, SiPostgresql, SiSqlite, SiPostman, SiMongodb, SiPocketbase, SiPlaywright, SiMocha, SiJira, SiRubyonrails, SiRubysinatra, SiJquery, SiChai, SiGraphql, SiMicrosoftsharepoint, SiMicrosoftword, SiMicrosoftpowerpoint, SiMicrosoftaccess, SiMicrosoftteams, SiMicrosoftexcel, SiWindows, SiMicrosoftexchange, SiCss3, SiHtml5, SiRedux, SiWebpack } from "react-icons/si";
 import { TechStackInfiniteCards } from "./TechStackInfiniteCards";
 import { BorderMagicButton } from "../ui/BorderMagicButton";
 import { FaAws, FaAngular, FaLinkedinIn } from "react-icons/fa";
@@ -203,7 +203,7 @@ export const techStacks = [
 	}, 
 	{
 		"icon": <TbBrandPrisma />,
-		"title": "Prisma",
+		"title": "Prism",
 		"renderInToolbox": true,
 	}, 
 	{
@@ -309,11 +309,6 @@ export const techStacks = [
 	{
 		"icon": <SiWebpack />,
 		"title": "Webpack",
-		"renderInToolbox": true,
-	},
-	{
-		"icon": <SiSocketdotio />,
-		"title": "Socket.io",
 		"renderInToolbox": true,
 	},
 	{
