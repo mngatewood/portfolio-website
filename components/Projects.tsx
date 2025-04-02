@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { projects } from '@/data';
@@ -16,10 +16,6 @@ export const Projects = () => {
 	const [isHovered, setIsHovered] = useState(false);
 	const color = isHovered ? "#000000" : "#38BDF8";
 
-	const sortedProjects = useMemo(() => {
-		return [...projects].sort((a, b) => b.id - a.id);
-	}, []);
-	
 	const toggleExpand = () => {
 		const element = document.getElementById('projects');
 		if (element && expandProjects) {
@@ -32,7 +28,7 @@ export const Projects = () => {
 		<section id="projects">
 			<h1 className="heading py-12">Project Spotlight</h1>
 			<div className={`${expandProjects ? 'max-h-[9999px]' : 'max-h-[1600px] md:max-h-[1700px] lg:max-h-[1140px] overflow-hidden bg-gradient-to-t from-slate-950'} flex flex-wrap items-center justify-center lg:gap-x-24 lg:gap-y-0 4xl:gap-x-24 md:gap-y-8 gap-y-0 lg:mt-8 mb-8  my-4`}>
-				{sortedProjects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
+				{ projects.map(({ id, title, description, img, link, linkTitle, iconList, repo }) => (
 					<div key={id} className="lg:h-[32rem] 4xl:h-[48rem] lg:mb-16 flex flex-col items-center justify-center">
 						{
 							linkTitle && link
@@ -103,7 +99,7 @@ export const Projects = () => {
 							</div>
 						}
 						<div className="relative top-0 xxs:-top-0 md:-top-0 lg:top-16 42xl:top-48 flex items-center justify-between md:max-w-[570px] lg:w-[40vw] w-[80vw] mt-7 mb-3 z-40">
-							<div className="flex items-center max-w-60 min-[520px]:max-w-full">
+							<div className="flex items-center">
 								{iconList.map((icon, index) => (
 									<div key={icon} className="border border-white/[0.3] rounded-full bg-black hover:bg-purple lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{
 										transform: `translateX(-${index * 8}px)`
@@ -116,7 +112,7 @@ export const Projects = () => {
 								<a href={repo} target="_blank" className="group">
 									<button className="flex justify-center items-center px-3 py-2 rounded-md font-bold transition duration-200 bg-black-100 text-purple group-hover:bg-purple group-hover:text-black-100 group-hover:border-teal-500 border border-white/[0.3]">
 											<FaGithub className="rounded-full" />
-											<p className="hidden xs:flex lg:text-lg md:text-xs text-sm ml-2">Repository</p>
+											<p className="flex lg:text-lg md:text-xs text-sm ml-2">Repository</p>
 											{/* <FaLocationArrow className="ms-3"  /> */}
 									</button>
 								</a>
