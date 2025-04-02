@@ -1,32 +1,41 @@
-import { cn } from "@/lib/utils";
-import React from "react";
+"use client"
+import { useEffect, useState } from 'react';
 
-export const Meteors = ({
-  number,
-  className,
-}: {
-  number?: number;
-  className?: string;
-}) => {
-  const meteors = new Array(number || 20).fill(true);
-  return (
-    <>
-      {meteors.map((el, idx) => (
-        <span
-          key={"meteor" + idx}
-          className={cn(
-            "animate-meteor-effect absolute top-1/2 left-1/2 h-0.5 w-0.5 rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[215deg]",
-            "before:content-[''] before:absolute before:top-1/2 before:transform before:-translate-y-[50%] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:from-[#64748b] before:to-transparent",
-            className
-          )}
-          style={{
-			top: Math.floor(Math.random() * (360 - -360) + -360) + "px",
-            left: 0,
-            animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
-            animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
-          }}
-        ></span>
-      ))}
-    </>
-  );
+export const Meteors = () => {
+	const [mounted, setMounted] = useState(false);
+	const [meteorStyles, setMeteorStyles] = useState<Array<{ top: number, left: number, delay: number, duration: number }>>([]);
+
+  useEffect(() => {
+	// Generate meteor styles only after mounting
+	const styles = Array.from({ length: 20 }, () => ({
+		top: -Math.floor(Math.random() * 200),
+		left: 0,
+		delay: Math.random(),
+		duration: Math.random() * 2 + 4
+	}));
+	setMeteorStyles(styles);
+	setMounted(true);
+  }, []);
+
+  // Don't render anything on server-side
+  if (!mounted) {
+	return null;
+  }
+
+	return (
+		<div className="absolute inset-0 overflow-hidden pointer-events-none">
+			{meteorStyles.map((style, idx) => (
+				<span
+					key={idx}
+					className="animate-meteor absolute h-0.5 w-0.5 rounded-[9999px] bg-slate-500 shadow-[0_0_0_1px_#ffffff10] rotate-[215deg]"
+					style={{
+						top: `${style.top}px`,
+						left: `${style.left}px`,
+						animationDelay: `${style.delay}s`,
+						animationDuration: `${style.duration}s`
+					}}
+				/>
+			))}
+		</div>
+	);
 };
