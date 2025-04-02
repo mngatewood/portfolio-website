@@ -5,6 +5,11 @@ const SENTRY_DSN = "https://a4944fe5d7c7e13a93d5e0e10f0f05be@o4508650504781824.i
 let isInitialized = false;
 
 export async function register() {
+  // Skip initialization in development mode
+  if (process.env.NODE_ENV === 'development') {
+    return;
+  }
+
   if (isInitialized) {
     return;
   }
@@ -20,8 +25,7 @@ export async function register() {
       Sentry.init({
         dsn: SENTRY_DSN,
         integrations: [
-          new Sentry.BrowserTracing(),
-          new Sentry.Replay({
+          Sentry.replayIntegration({
             maskAllText: false,
             blockAllMedia: false,
           }),
@@ -29,6 +33,7 @@ export async function register() {
         tracesSampleRate: 1.0,
         replaysSessionSampleRate: 0.1,
         replaysOnErrorSampleRate: 1.0,
+        enabled: process.env.NODE_ENV === 'production',
       });
     }
     // Server-side initialization
@@ -36,6 +41,7 @@ export async function register() {
       Sentry.init({
         dsn: SENTRY_DSN,
         tracesSampleRate: 1.0,
+        enabled: process.env.NODE_ENV === 'production',
       });
     }
     // Edge runtime initialization
@@ -43,6 +49,7 @@ export async function register() {
       Sentry.init({
         dsn: SENTRY_DSN,
         tracesSampleRate: 1.0,
+        enabled: process.env.NODE_ENV === 'production',
       });
     }
 
