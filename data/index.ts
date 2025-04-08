@@ -78,8 +78,8 @@ export const projects = [
 		description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
 		img: "/p1.png",
 		iconList: ["React", "Meteor.js", "TypeScript", "Mocha", "MongoDB", "Docker"],
-		link: "https://mngatewood-keys-cogs.meteorapp.com/",
-		linkTitle: "mngatewood-keys-cogs.meteorapp.com",
+		link: "https://keys-cogs-production.up.railway.app/",
+		linkTitle: "keys-cogs-production.up.railway.app/",
 		repo: "https://github.com/mngatewood/keys-cogs"
 	},
 	{
