@@ -72,16 +72,16 @@ export const gridItems = [
 ];
 
 export const projects = [
-	// {
-	// 	id: "10",
-	// 	title: "Keys & Cogs",
-	// 	description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
-	// 	img: "/p1.png",
-	// 	iconList: ["React", "Meteor.js", "TypeScript", "TailwindCSS", "Mocha", "MongoDB"],
-	// 	link: "https://mngatewood-keys-cogs.meteorapp.com/",
-	// 	linkTitle: "mngatewood-keys-cogs.meteorapp.com",
-	// 	repo: "https://github.com/mngatewood/keys-cogs"
-	// },
+	{
+		id: "10",
+		title: "Keys & Cogs",
+		description: "A digital adaptation of the popular tabletop word-association game, <i>So Clover!</i>",
+		img: "/p1.png",
+		iconList: ["React", "Meteor.js", "TypeScript", "Mocha", "MongoDB", "Docker"],
+		link: "https://mngatewood-keys-cogs.meteorapp.com/",
+		linkTitle: "mngatewood-keys-cogs.meteorapp.com",
+		repo: "https://github.com/mngatewood/keys-cogs"
+	},
 	{
 		id: "9",
 		title: "P.I. Link",
